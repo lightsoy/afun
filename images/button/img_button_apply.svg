@@ -1,0 +1,39 @@
+<svg width="240" height="56" viewBox="0 0 240 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Buttons_Menu1" filter="url(#filter0_dii_731_1808)">
+<rect width="240" height="56" rx="4" fill="black" shape-rendering="crispEdges"/>
+<rect width="240" height="56" rx="4" fill="url(#paint0_radial_731_1808)" fill-opacity="0.5" shape-rendering="crispEdges"/>
+<rect width="240" height="56" rx="4" fill="url(#paint1_linear_731_1808)" fill-opacity="0.9" style="mix-blend-mode:overlay" shape-rendering="crispEdges"/>
+</g>
+<defs>
+<filter id="filter0_dii_731_1808" x="-10" y="-1" width="260" height="77" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_731_1808"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_731_1808" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.840451 0 0 0 0 0.952994 0 0 0 0 0.979167 0 0 0 1 0"/>
+<feBlend mode="overlay" in2="shape" result="effect2_innerShadow_731_1808"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-1"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.171059 0 0 0 0 0.60042 0 0 0 0 0.695833 0 0 0 1 0"/>
+<feBlend mode="overlay" in2="effect2_innerShadow_731_1808" result="effect3_innerShadow_731_1808"/>
+</filter>
+<radialGradient id="paint0_radial_731_1808" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(184.041 37.3333) rotate(-171.05) scale(282.604 58.0752)">
+<stop stop-color="#0A445B" stop-opacity="0"/>
+<stop offset="1" stop-color="#8ED2E1"/>
+</radialGradient>
+<linearGradient id="paint1_linear_731_1808" x1="120" y1="-12.8333" x2="120" y2="56" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D6F3FA"/>
+<stop offset="0.403918" stop-color="#62B3C5"/>
+</linearGradient>
+</defs>
+</svg>

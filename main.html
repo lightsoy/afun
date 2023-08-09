@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>afun interactive</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="headerWrap">
+        <h1 class="logo">
+            <a href="main.html"><img src="images/dark_mode/logo.png" alt=""></a>
+        </h1>
+        <nav>
+            <ul class="gnb">
+                <li><a href="#">About</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="headerIcons">
+            <li><a href=""><img src="images/dark_mode/ico_globe.png" alt=""></a></li>
+            <li><a href=""><img src="images/dark_mode/ico_mode.png" alt=""></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="quickBtnArea" id="MOVE_TOP_BTN">
+    <div class="chatDiv">
+        <button class="quickMsg"></button>
+        <div class="quickBtnTextWrap">
+            <p class="msgText">채팅으로 빠르게 문의하기</p>
+            <p class="msgText">
+                <span class="msgText"></span>
+                월요일 10:00부터 운영
+            </p>
+        </div>
+    </div>
+    <button class="quickTop" id="quickTop"></button>
+</div>
+
+<section class="visual">
+    <div class="videoFrame">
+        <video id="mainVideo" src="video/video_visual.bg.mp4" autoplay muted loop playsinline></video>
+    </div>
+
+    <div class="contentArea">
+
+        <div class="visualTitArea">
+            <strong>Real-time 3D Contents</strong>
+            <h2>We are AFUN<br>
+                AFUN Interactive</h2>
+        </div>
+
+        <div class="ctrlBtn">
+            <button class="sound"><img src="images/button/img_controler_mute.png" alt=""></button>
+            <button class="play"><img src="images/button/img_controler_pause.png" alt="#"></button>
+        </div>
+
+        <div class="scrollArea">
+            <div class="scrollBtn">
+                <i class="xi-long-arrow-down"></i>
+            </div>
+            <span>Scroll</span>
+        </div>
+
+        <button class="aboutBtn">About Us</button>
+    </div>
+</section>
+
+<section class="ourWorks">
+    <div class="inner">
+        <div class="textGroup">
+            <div class="textArea ani">
+                <div class="titWrap">
+                    <h2>Our Works</h2>
+                </div>
+                <div class="textWrap">
+                    <span class="cate">Digital Human</span>
+                    <h3>버추얼 트윈 ‘코리&브리’ 공개…<br>
+                        버추얼 휴먼 상업화 속도</h3>
+                    <span class="date">2023.8.19</span>
+                </div>
+
+                <div class="wSlideTextWrap">
+                    <div class="wTextWrap">
+                        <span class="cate">Digital Human</span>
+                        <h3>버추얼 트윈 ‘코리&브리’ 공개…<br>
+                            버추얼 휴먼 상업화 속도</h3>
+                        <span class="date">2023.8.19</span>
+                    </div>
+                    <div class="wTextWrap">
+                        <span class="cate">High Quality Realtime 3D Contents</span>
+                        <h3>Hyundai Motor Company : IONIQ Streamliner Unveil Design film</h3>
+                        <span class="date">2023.08.03</span>
+                    </div>
+                    <div class="wTextWrap">
+                        <span class="cate">Ganimation</span>
+                        <h3>Apoki 'Mood V5'</h3>
+                        <span class="date">2023.07.15</span>
+                    </div>
+                    <div class="wTextWrap">
+                        <span class="cate">Digital Human</span>
+                        <h3>한유아(YuA) x NAVER
+                            <br>Shopping live</h3>
+                        <span class="date">2023.06.07</span>
+                    </div>
+                    <div class="wTextWrap">
+                        <span class="cate">Ganimation</span>
+                        <h3>아뽀키가 주말을 보내는 방법 #weekend</h3>
+                        <span class="date">2023.04.16</span>
+                    </div>
+                    <div class="wTextWrap">
+                        <span class="cate">Digital Human</span>
+                        <h3>버추얼 휴먼 ‘애나(ANA)’ 세계관 공개</h3>
+                        <span class="date">2023.03.21</span>
+                    </div>
+                    <div class="wTextWrap">
+                        <span class="cate">High Quality Realtime 3D Contents</span>
+                        <h3>2022 &Award<br>디지털 미디어 & 서비스 부문 과기부 장관상 포함 3관왕 수상</h3>
+                        <span class="date">2023.02.09</span>
+                    </div>
+                    <div class="wTextWrap">
+                        <span class="cate">Digital Human</span>
+                        <h3>CGV : Media day with SORI</h3>
+                        <span class="date">2023.01.12</span>
+                    </div>
+                </div>
+                <button class="wBtn">More</button>
+            </div>
+            <div class="slideArea">
+                <div class="wSlideWrap">
+                    <div class="prevArrow">
+                        <i class="xi-angle-left-thin"></i>
+                    </div>
+                    <div class="nextArrow">
+                        <i class="xi-angle-right-thin"></i>
+                    </div>
+                    <div class="wSlideImgWrap">
+                        <div class="wDimmed"></div>
+                        <div class="wSlider" id="wSlider">
+                            <div><img src="images/img_our_works_1.jpg" alt="#"></div>
+                            <div><img src="images/img_our_works_2.jpg" alt="#"></div>
+                            <div><img src="images/img_our_works_3.jpg" alt="#"></div>
+                            <div><img src="images/img_our_works_4.jpg" alt="#"></div>
+                            <div><img src="images/img_our_works_5.jpg" alt="#"></div>
+                            <div><img src="images/img_our_works_6.jpg" alt="#"></div>
+                            <div><img src="images/img_our_works_7.jpg" alt="#"></div>
+                            <div><img src="images/img_our_works_8.jpg" alt="#"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wDotsWrap"></div>
+    </div>
+</section>
+
+<section class="business">
+    <div class="inner">
+        <div class="textArea ani">
+            <div class="titWrap">
+                <h2>Business Area</h2>
+            </div>
+            <div class="textWrap subTit">
+                <p>
+                    에이펀 인터랙티브(AFUN Interactive)는 "불가능을 가능으로"라는 회사의 모토와 같이 기존 콘텐츠 제작 틀을 깨고<br>
+                    끊임 없이 고민하고 시도하여, 더 효율적이며, 획기적인 미디어 콘텐츠를 제작 할 수 있게 되었습니다.<br>
+                    이러한 기술과 실력으로 변화 하는 미디어 콘텐츠 시장에서 새로운 지평을 열겠습니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="contentArea">
+            <div class="box">
+                <div class="boxImg img1"></div>
+                <div class="boxTit">
+                    <strong>Digital Human</strong>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxImg img2"></div>
+                <div class="boxTit">
+                    <strong>Ganimation</strong>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxImg img3"></div>
+                <div class="boxTit">
+                    <strong>
+                        High Quality<br>
+                        Realtime 3D Contents
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="ourHistory">
+    <div class="inner">
+        <div class="textArea">
+            <div class="titWrap">
+                <h2>Our History</h2>
+                <div class="subTit">
+                    <p>
+                        에이펀의 역사는 도전의 역사였고, 시장에 늘 새로운 솔루션을 제시해왔습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="historyArea">
+        <span class="timeLine"></span>
+        <div class="hSlider" id="hSlider">
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2023</strong>
+                <ul class="time">
+                    <li>2022 앤어워드 디지털 미디어 & 서비스 부문 과기부 장관상 포함 3관왕</li>
+                    <li>‘SM’과 뮤직비디오 제작 협업</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2022</strong>
+                <ul class="time">
+                    <li>몬트리올 스튜디오 설립</li>
+                    <li>‘대종상영화제’ 시각효과상 3개 작품 동시 노미네이트</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2021</strong>
+                <ul class="time">
+                    <li>KOSPI 상장</li>
+                    <li>국제방송교류재단 산학 협력 광신방송예술고 현장견학 지원</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2020</strong>
+                <ul class="time">
+                    <li>오버워치 에코 제작</li>
+                    <li>Henry Lau X OCTIV MUSIC TALK SHOW 제작</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2019</strong>
+                <ul class="time">
+                    <li>국내 최고 버추얼 프로덕션 기업과 4자 MOU 체결</li>
+                    <li>문화유산기술연구소와 MOU…실감콘텐츠 공동 연구·제작</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2018</strong>
+                <ul class="time">
+                    <li>VR 가구 플랫폼 ‘하우저’ B2B 매출 발생 시작</li>
+                    <li>롯데컬처웍스와 영화 디지털 자산 NFT MOU 체결</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2017</strong>
+                <ul class="time">
+                    <li>패스트트랙아시아 지분 취득</li>
+                    <li>한국모태펀드 문화계정 출자 사업 참여</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2016</strong>
+                <ul class="time">
+                    <li>미디어 아트 참여 전시 ‘서울라이트 DDP’ 레드닷 디자인 어워드 본상 수상</li>
+                    <li>‘SM’과 뮤직비디오 제작 협업</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2015</strong>
+                <ul class="time">
+                    <li>기술혁신형 중소기업(Inno-Biz) 선정</li>
+                    <li>Kibo-Star밸리 기업 선정</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2014</strong>
+                <ul class="time">
+                    <li>미국법인 'Interactive AF inc.'설립</li>
+                    <li>샌드박스 파트너십 계약 체결</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2013</strong>
+                <ul class="time">
+                    <li>CES 2019 SKT X SME 전시관 Dancing VR 제작</li>
+                    <li>SK 고 최종현 회장 디지털 복원 프로젝트</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2012</strong>
+                <ul class="time">
+                    <li>베니스 영화제 베스트 VR 경험상 "Buddy VR" 대상</li>
+                    <li>과학기술정보통신부 대한민국 ImpaCT-ech 대상 장관상 수상</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2010</strong>
+                <ul class="time">
+                    <li>퍼스트펭귄형 창업기업 선정</li>
+                    <li>과학기술정보통신부 ICT 유망기업 (K-Global 300) 선정</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2009</strong>
+                <ul class="time">
+                    <li>NVIDIA Edge Program Winners 수상</li>
+                    <li>포스코 자동차용 소재 VR홍보영상 제작</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2008</strong>
+                <ul class="time">
+                    <li>미래창조과학부 산하 K-ICT 본투글로벌 센터장상 수상</li>
+                    <li>NVIDIA 기술협정 NDA 체결</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2007</strong>
+                <ul class="time">
+                    <li>유네스코 미디어아트 창의도시 광주 GMAP에 공공 미디어 아트 콘텐츠 구현</li>
+                    <li>FACEWARE 기술제휴 MOU 체결</li>
+                </ul>
+            </div>
+            <div class="textWrap">
+                <div class="textDot"></div>
+                <strong class="years">2006</strong>
+                <ul class="time">
+                    <li>NCSOFT AION Legions 아트 리소스 제작</li>
+                    <li>‘AFUN INTERACTIVE’ 창립</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ourTeam">
+    <div class="inner">
+        <div class="contentArea">
+            <div class="textArea ani">
+                <div class="titWrap ">
+                    <h2>Our Team</h2>
+                    <div class="subTit">
+                        <p>
+                            에이펀은 메타버스시대의 플레이어로서 테크와 크리에이티브 사이에 발생하는 많은 가능성에 시도합니다.<br>
+                            AI 기반 버추얼 휴먼 제작, 실시간 XR 콘텐츠, 실감형 리얼 타임 콘텐츠, 광고 및 영상 VFX에 이르기까지<br>
+                            우리만의 새로운 문법을 가진 크리에이티브 테크 기업으로서의 행보를 걷고 있습니다.
+                        </p>
+                    </div>
+                    <span>회사 소개 바로가기</span>
+                </div>
+            </div>
+            <div class="accordionArea">
+                <ul class="accordion">
+                    <li>
+                        <div class="team">
+                            <h3>VFX</h3>
+                            <div class="accordionBtn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="teamList">
+                            <li>3D Asset Developer</li>
+                            <li>3D Asset Rigger</li>
+                            <li>3D Animaitor</li>
+                            <li>CG Lighter</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="team">
+                            <h3>Software Developer</h3>
+                            <div class="accordionBtn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="teamList">
+                            <li>3D Asset Developer</li>
+                            <li>3D Asset Rigger</li>
+                            <li>3D Animaitor</li>
+                            <li>CG Lighter</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="team">
+                            <h3>Game Developer</h3>
+                            <div class="accordionBtn">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="teamList">
+                            <li>3D Asset Developer</li>
+                            <li>3D Asset Rigger</li>
+                            <li>3D Animaitor</li>
+                            <li>CG Lighter</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="apply">
+    <div class="inner">
+        <div class="bannerArea ani">
+            <div class="bannerTit">
+                <strong>
+                    미래의 콘텐츠 시장을 함께 이끌어나갈<br>
+                    당신의 지원을 기다립니다.
+                </strong>
+            </div>
+            <button class="applyBtn">Apply</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="partners">
+    <div class="inner">
+        <div class="textArea">
+            <div class="titWrap">
+                <h2>Business Partners</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rollingArea">
+        <div class="rolling">
+            <div class="logoWrap">
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_1.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_2.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_3.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_4.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_5.png" alt="">
+                </div>
+            </div>
+            <div class="logoWrap">
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_6.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_7.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_8.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_9.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_10.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="rolling">
+            <div class="logoWrap">
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_1.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_2.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_3.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_4.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_5.png" alt="">
+                </div>
+            </div>
+            <div class="logoWrap">
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_6.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_7.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_8.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_9.png" alt="">
+                </div>
+                <div class="rollingImgWrap">
+                    <img src="images/partners/img_partners_10.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="topArea">
+        <h1 class="logo">
+            <a href="main.html"><img src="images/dark_mode/logo.png" alt=""></a>
+        </h1>
+        <div class="companyInfo">
+            <p>
+                서울특별시 영등포구 선유로49길 4, SK1TOWER 지상 2층<br>
+                TEL : 070-8676-6147<br>
+                Email : info@afun-interactive.com<br>
+            </p>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="bottomArea">
+        <div class="copyRight">
+            <p>
+                Copyright ⓒ 2023 afun interactive inc. All rights reserved.
+            </p>
+        </div>
+        <div class="snsLink">
+            <div class="imgWrap" id="sns_instagram">
+                <img src="images/button/img_sns_instargram.png" alt="#">
+            </div>
+            <div class="imgWrap" id="sns_twitter">
+                <img src="images/button/img_sns_twitter.png" alt="">
+            </div>
+            <div class="imgWrap" id="sns_youtube">
+                <img src="images/button/img_sns_youtube.png" alt="">
+            </div>
+        </div>
+        <div class="emailRefuse">
+            <span>이메일무단수집거부</span>
+        </div>
+    </div>
+</footer>
+
+<!--    <script src="js/jquery-3.6.0.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

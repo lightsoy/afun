@@ -1,0 +1,218 @@
+@import "common.css";
+
+.breadCrumbs {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    border-top: 2px solid #757575;
+    box-sizing: border-box;
+
+    /*height: 48px;*/
+    /*background: green;*/
+}
+.breadCrumbs .location {
+    font-size: 0;
+    margin-left: 70px;
+
+    /*background: dodgerblue;*/
+}
+
+.breadCrumbs .location .loca {
+    font-size: 12px;
+    line-height: 48px;
+    /*line-height: 16px;*/
+
+    /*box-sizing: border-box;*/
+    /*border: 2px solid red;*/
+}
+
+.breadCrumbs .location .loca-1:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url("../images/dark_mode/ico_right.png") no-repeat center/ 100% 100%;
+    margin: -2px 2px 0;
+
+    /*border: 1px solid red;*/
+    /*box-sizing: border-box;*/
+}
+
+/*businessInfo*/
+.businessInfo {
+    padding-top: 200px;
+    /*background: pink;*/
+}
+
+.businessInfo.info-1 {
+    padding-top: 200px;
+
+    /*background: mediumpurple;*/
+}
+
+.businessInfo .textArea {
+    display: flex;
+    justify-content: center;
+    margin-left: 52px;
+    align-items: center;
+    /*background: dodgerblue;*/
+}
+.businessInfo .textArea .titWrap {
+}
+.businessInfo .textArea .titWrap h2 {
+    /*text-align: center;*/
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 900;
+    color: #fff;
+    /*background: rebeccapurple;*/
+}
+.businessInfo .textArea .textWrap {
+    margin-left: 48px;
+}
+.businessInfo .textArea .textWrap p {}
+
+
+.businessInfo .imgArea {
+    min-width: 1440px;
+    margin-top: 56px;
+
+    /*background: dodgerblue;*/
+}
+.businessInfo .imgArea .imgWrap {
+    width: 100%;
+    height: 640px;
+    /*background: red;*/
+}
+
+.businessInfo.info-1 .imgArea .imgWrap {
+    background: url("../images/sub_business/img_sub_business_1.png") no-repeat left top / cover;
+}
+
+.businessInfo.info-2 .imgArea .imgWrap {
+    background: url("../images/sub_business/img_sub_business_2.png") no-repeat left top / cover;
+}
+
+.businessInfo.info-3 .imgArea .imgWrap {
+    background: url("../images/sub_business/img_sub_business_3.png") no-repeat left top / cover;
+}
+
+
+
+
+
+/*partnersInfo*/
+.partnersInfo {}
+.partnersInfo .textArea {
+    margin-top: 120px;
+    text-align: center;
+}
+.partnersInfo .textArea .titWrap {}
+.partnersInfo .textArea .titWrap h2{}
+
+.partnersInfo .imgArea {
+    margin-top: 76px;
+}
+.partnersInfo .imgArea .imgWrap {
+    display: flex;
+    justify-content: center;
+}
+.partnersInfo .imgArea .imgWrap .img {
+    width: 180px;
+    height: 120px;
+    background: url("../images/partners/img_partners_1.png")no-repeat center / cover;
+}
+
+/*awards*/
+.awards {}
+.awards .textArea {
+    margin-top: 120px;
+    text-align: center;
+}
+.awards .textArea .titWrap {}
+.awards .textArea .titWrap h2 {}
+
+.awards .slideArea {
+    position: relative;
+    /*margin: 72px 128px 0 128px;*/
+    margin-top: 72px;
+    background: pink;
+}
+.awards .slideArea .aSlider {}
+.awards .slideArea .aSlider .awardsItem {
+    /*padding-left: 24px;*/
+    /*margin: 0 12px;*/
+}
+.awards .slideArea .aSlider .awardsItem:last-child {
+    /*padding-left: 0;*/
+}
+.awards .slideArea .aSlider .awardsItem .awardsBg {
+    position: relative;
+
+    width: 240px;
+    height: 220px;
+    background: url("../images/sub_business/img_sub_business_awards_bg.png") no-repeat center / cover;
+}
+.awards .slideArea .aSlider .awardsItem .awardsBg .awardsTit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+
+    white-space: pre-wrap;
+}
+
+.awards .slideArea .aSlider .awardsItem .awardsYears {
+    width: 240px;
+    margin-top: 24px;
+
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 900;
+    background: dodgerblue;
+}
+
+.awards .slideArea :is(.prevArrow, .nextArrow) {
+    position: absolute;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    cursor: pointer;
+
+    transform: translateY(-50%);
+    background: dodgerblue;
+}
+.awards .slideArea .prevArrow {
+    left: 0;
+}
+.awards .slideArea .nextArrow {
+    right: 0;
+}
+
+
+
+/**/
+.businessInfo .textArea :is(.titWrap, .textWrap) {
+    transform: translateX(-2%);
+    opacity: 0;
+}
+
+.businessInfo .ani.on .titWrap,
+.businessInfo .ani.on .textWrap {
+    transform: translateX(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+.businessInfo .ani.on .textWrap {
+    transition-delay: 0.2s;
+}
