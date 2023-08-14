@@ -1,6 +1,5 @@
 const $ourWorks = $(".ourWorks");
 const $wSlider  = $("#wSlider");
-const $hSlider  = $("#hSlider");
 const $accorLi = $(".ourTeam .accordion > li");
 
 

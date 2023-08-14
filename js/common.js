@@ -7,6 +7,9 @@ const $header = $(".header");
 const $footer = $(".footer");
 const $quickTop = $("#quickTop");
 
+// sub_about 사용
+const $hSlider  = $("#hSlider");
+
 
 // header
 

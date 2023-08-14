@@ -1,9 +1,128 @@
-body {
-    width: 1920px;
+@import "common.css";
+
+.afunInfo {
+    padding-top: 128px;
+}
+.afunInfo .imgWrap {
+    display: flex;
+    align-items: center;
+
+    height: 688px;
+    background: url("../images/sub_about/about_info_bg.png") no-repeat left bottom /100% 100%;
+
+
+    /*border: 2px solid red;*/
+}
+.afunInfo .imgWrap .textArea {}
+.afunInfo .imgWrap .textArea .titWrap {
+    text-align: center;
+    white-space: pre-wrap;
+}
+.afunInfo .imgWrap .textArea .titWrap h2 {}
+.afunInfo .imgWrap .textArea .titWrap .subTit {}
+.afunInfo .imgWrap .textArea .titWrap .subTit p{}
+
+
+
+/*ourHistory*/
+.ourHistory {
+    padding: 180px 0 50px;
+    position: relative;
+    /*background: url(../images/img_history_bg.png)no-repeat center / 100% 100%;*/
+    /*height: 556px;*/
+    box-sizing: border-box;
+    overflow: hidden;
+    /*background: dodgerblue;*/
+    /*border: 5px solid deeppink;*/
+}
+.ourHistory .textArea {
+    /*padding: 48px 0 0 240px;*/
+    vertical-align: center;
+}
+.ourHistory .textArea .titWrap {}
+.ourHistory .textArea .titWrap h2 {}
+.ourHistory .textArea .titWrap .subTit {
+    margin-top: 16px;
+}
+.ourHistory .textArea .titWrap .subTit p {}
+
+
+
+.ourHistory .historyArea {
+    margin-top: 240px;
+    /*background: red;*/
+}
+.ourHistory .historyArea .timeLine {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--main-200);
+}
+.ourHistory .historyArea .hSlider {
+    /*width: 1920px;*/
+}
+.ourHistory .historyArea .hSlider .slick-list {
+    overflow: visible;
+}
+.ourHistory .historyArea .hSlider .textWrap {
+    transform: translateY(-8px);
+    text-align: center;
+
+    width: 384px;
+    cursor: pointer;
+    /*border: 1px solid red;*/
+    /*background: #92c32a;*/
+}
+.ourHistory .historyArea .hSlider .textWrap .textDot {
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: var(--main-100);
+}
+.ourHistory .historyArea .hSlider .textWrap .years {
+    display: block;
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 24px;
+}
+.ourHistory .historyArea .hSlider .textWrap .time {
+    margin-top: 8px;
+}
+.ourHistory .historyArea .hSlider .textWrap .time li {
+    color: var(--main-200);
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 4px;
 }
 
-div {
-    width: 1920px;
-    height: 3247px;
-    /*background: url("images/sub_about/img_sub_about_dark.jpg") no-repeat center /100%;*/
+/*ciGuide*/
+.ciGuide {}
+.ciGuide .contentArea {}
+.ciGuide .contentArea .textArea {}
+.ciGuide .contentArea .textArea .titWrap {}
+.ciGuide .contentArea .textArea .titWrap h2 {}
+
+.ciGuide .contentArea .textArea .textWrap {}
+.ciGuide .contentArea .textArea .textWrap h3 {}
+.ciGuide .contentArea .textArea .textWrap p {}
+
+.ciGuide .contentArea .btnWrap {}
+.ciGuide .contentArea .btnWrap button {
+    width: 384px;
+    height: 56px;
+    background: url("../images/button/img_button_sub_about_guide.svg") no-repeat center /100%;
+
+    border: none;
+    color: var(--main-100);
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 4px;
+}
+.ciGuide .contentArea .btnWrap button.color {}
+.ciGuide .contentArea .btnWrap button.mono {}
+
+
+.ciGuide .contentArea .imgArea {
+    background: dodgerblue;
 }

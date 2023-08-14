@@ -163,6 +163,47 @@ body {
     object-fit: cover;
 }
 
+/*sub page 공통*/
+.breadCrumbs {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    border-top: 2px solid #757575;
+    box-sizing: border-box;
+
+    /*height: 48px;*/
+    /*background: green;*/
+}
+.breadCrumbs .location {
+    font-size: 0;
+    margin-left: 70px;
+
+    /*background: dodgerblue;*/
+}
+
+.breadCrumbs .location .loca {
+    font-size: 12px;
+    line-height: 48px;
+    /*line-height: 16px;*/
+
+    /*box-sizing: border-box;*/
+    /*border: 2px solid red;*/
+}
+
+.breadCrumbs .location .loca-1:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url("../images/dark_mode/ico_right.png") no-repeat center/ 100% 100%;
+    margin: -2px 2px 0;
+
+    /*border: 1px solid red;*/
+    /*box-sizing: border-box;*/
+}
+
+
 
 /*section 공통 적용 */
 section {
