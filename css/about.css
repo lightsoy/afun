@@ -97,22 +97,43 @@
 }
 
 /*ciGuide*/
-.ciGuide {}
+.ciGuide {
+    padding: 200px 0;
+}
 .ciGuide .contentArea {
     display: flex;
     justify-content: space-between;
 }
-.ciGuide .contentArea .textArea {}
+.ciGuide .contentArea .textArea {
+    border: 1px solid red;
+
+}
 .ciGuide .contentArea .textArea .titWrap {}
 .ciGuide .contentArea .textArea .titWrap h2 {}
 
-.ciGuide .contentArea .textArea .textWrap {}
-.ciGuide .contentArea .textArea .textWrap h3 {}
-.ciGuide .contentArea .textArea .textWrap p {}
+.ciGuide .contentArea .textArea .textWrap {
+    margin-top: 46px;
+}
+.ciGuide .contentArea .textArea .textWrap h3 {
+    font-size: 22px;
+    line-height: 28px;
+}
+.ciGuide .contentArea .textArea .textWrap p {
+    margin-top: 16px;
 
-.ciGuide .contentArea .textArea .btnWrap {}
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 900;
+    color: var(--main-200);
+}
+
+.ciGuide .contentArea .textArea .btnWrap {
+    margin-top: 36px;
+}
 .ciGuide .contentArea .textArea .btnWrap .btn {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 384px;
     height: 56px;
     background: url("../images/button/img_button_sub_about_guide.svg") no-repeat center /100%;
@@ -123,30 +144,44 @@
     line-height: 24px;
     border-radius: 4px;
 }
-.ciGuide .contentArea .textArea .btnWrap .btn.color {}
-.ciGuide .contentArea .textArea .btnWrap .btn.mono {}
 
-.ciGuide .contentArea .textArea .btnWrap .btn span {}
+.ciGuide .contentArea .textArea .btnWrap .btn.on {
+    background: url("../images/button/img_button_sub_about_guide_click.svg") no-repeat center /100%;
+}
+
+.ciGuide .contentArea .textArea .btnWrap .btn.color {}
+.ciGuide .contentArea .textArea .btnWrap .btn.mono {margin-top: 16px;}
+
+.ciGuide .contentArea .textArea .btnWrap .btn span {
+    margin-left: 24px;
+}
 .ciGuide .contentArea .textArea .btnWrap .btn .arrowIcon {
     width: 64px;
     height: 32px;
     background: url("../images/button/ico_sub_about_guide.png") no-repeat center / 100%;
+    margin-right: 24px;
 }
-
-
 
 .ciGuide .contentArea .imgArea {
+    width: 800px;
     margin-left: 62px;
 }
-
 .ciGuide .contentArea .imgArea .verticalLogo {
-    width: 502px;
-    height: 168px;
-    background: dodgerblue;
+    /*width: 502px;*/
+    width: 100%;
+    height: 268px;
+    background: url("../images/dark_mode/logo_ci_guide_horizontal.png") no-repeat center / 100% 100%;
+
+    border: 2px solid var(--main-400);
+    box-sizing: border-box;
 }
 .ciGuide .contentArea .imgArea .horizontalLogo {
-    width: 502px;
-    height: 248px;
-    background: dodgerblue;
+    /*width: 502px;*/
+    width: 100%;
+    height: 395px;
+    background: url("../images/dark_mode/logo_ci_guide_vertical.png") no-repeat center / 100% 100%;
     margin-top: 24px;
+
+    border: 2px solid var(--main-400);
+    box-sizing: border-box;
 }
