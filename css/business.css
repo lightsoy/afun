@@ -220,7 +220,7 @@
 /*text scroll ani*/
 /*business*/
 .businessInfo .textArea :is(.titWrap, .textWrap) {
-    transform: translateX(-2%);
+    transform: translateX(-10px);
     opacity: 0;
 }
 
@@ -236,7 +236,7 @@
 
 /*partnersInfo*/
 .partnersInfo .textArea .titWrap {
-    transform: translateY(50%);
+    transform: translateY(10px);
     opacity: 0;
 }
 .partnersInfo .ani.on .titWrap {
@@ -247,7 +247,7 @@
 
 /*awards*/
 .awards .textArea .titWrap {
-    transform: translateY(50%);
+    transform: translateY(10px);
     opacity: 0;
 }
 .awards .ani.on .titWrap {
@@ -262,20 +262,20 @@
     color: inherit;
 }
 .adBanner a .bannerArea .bannerTit {
-    transform: translateY(50%);
+    transform: translateX(-10px);
     opacity: 0;
 }
 .adBanner a .ani.on .bannerTit {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     transition: 0.5s;
 }
 .adBanner a .bannerArea .adBtn {
-    transform: translateY(50%);
+    transform: translateX(-10px);
     opacity: 0;
 }
 .adBanner a .ani.on .adBtn {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     transition: 0.5s;
     transition-delay: 0.2s;
