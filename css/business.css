@@ -121,7 +121,12 @@
 .partnersInfo .imgArea .imgWrap .img {
     width: 180px;
     height: 120px;
-    background: url("../images/partners/img_partners_1.png")no-repeat center / cover;
+    /*background: url("../images/partners/img_partners_1.png")no-repeat center / cover;*/
+}
+.partnersInfo .imgArea .imgWrap .img img {
+    width: 100%;
+    object-fit: cover;
+    /*border: 1px solid red;*/
 }
 
 /*awards*/
