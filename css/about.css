@@ -98,7 +98,10 @@
 
 /*ciGuide*/
 .ciGuide {}
-.ciGuide .contentArea {}
+.ciGuide .contentArea {
+    display: flex;
+    justify-content: space-between;
+}
 .ciGuide .contentArea .textArea {}
 .ciGuide .contentArea .textArea .titWrap {}
 .ciGuide .contentArea .textArea .titWrap h2 {}
@@ -107,8 +110,9 @@
 .ciGuide .contentArea .textArea .textWrap h3 {}
 .ciGuide .contentArea .textArea .textWrap p {}
 
-.ciGuide .contentArea .btnWrap {}
-.ciGuide .contentArea .btnWrap .btn {
+.ciGuide .contentArea .textArea .btnWrap {}
+.ciGuide .contentArea .textArea .btnWrap .btn {
+    display: flex;
     width: 384px;
     height: 56px;
     background: url("../images/button/img_button_sub_about_guide.svg") no-repeat center /100%;
@@ -119,10 +123,30 @@
     line-height: 24px;
     border-radius: 4px;
 }
-.ciGuide .contentArea .btnWrap .btn.color {}
-.ciGuide .contentArea .btnWrap .btn.mono {}
+.ciGuide .contentArea .textArea .btnWrap .btn.color {}
+.ciGuide .contentArea .textArea .btnWrap .btn.mono {}
+
+.ciGuide .contentArea .textArea .btnWrap .btn span {}
+.ciGuide .contentArea .textArea .btnWrap .btn .arrowIcon {
+    width: 64px;
+    height: 32px;
+    background: url("../images/button/ico_sub_about_guide.png") no-repeat center / 100%;
+}
+
 
 
 .ciGuide .contentArea .imgArea {
+    margin-left: 62px;
+}
+
+.ciGuide .contentArea .imgArea .verticalLogo {
+    width: 502px;
+    height: 168px;
     background: dodgerblue;
+}
+.ciGuide .contentArea .imgArea .horizontalLogo {
+    width: 502px;
+    height: 248px;
+    background: dodgerblue;
+    margin-top: 24px;
 }
