@@ -13,6 +13,21 @@ body {
     color: #fff;
 }
 
+:root {
+    --main-100: #fff;
+    --main-200: #bdbdbd;
+    --main-300: #757575;
+    --main-400: #4e4e4e;
+    --main-800: #000;
+
+    --sub2-300: #f78efb;
+    --sub2-600: #a82ad4;
+    --sub2-700: #6204bf;
+
+    --sub3-100: #d6f3fa;
+    --sub3-400: #62b3c5;
+}
+
 /*header*/
 .header {
     position: fixed;
