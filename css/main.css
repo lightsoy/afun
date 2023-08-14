@@ -444,6 +444,7 @@
 .business .contentArea .box {
     width: 296px;
     position: relative;
+    cursor: pointer;
 }
 .business .contentArea .box:nth-child(2){
     margin: 96px 48px 0;
