@@ -53,7 +53,7 @@
     font-size: 24px;
     line-height: 32px;
     font-weight: 900;
-    color: #bdbdbd;
+    color: var(--main-200);
 }
 .visual .contentArea .visualTitArea h2 {
     font-size: 58px;
@@ -144,7 +144,7 @@
     width: 138px;
     height: 44px;
     border: none;
-    color: #fff;
+    color: var(--main-100);
     background: url("../images/button/img_button_visual.svg");
 
     cursor: pointer;
@@ -288,7 +288,7 @@
     width: 320px;
     height: 56px;
     /*margin-top: 96px;*/
-    color: #fff;
+    color: var(--main-100);
     border: none;
     cursor: pointer;
 
@@ -388,7 +388,7 @@
 .ourWorks .wDotsWrap .customDots li.slick-active {
     width: 16px;
     height: 16px;
-    background: #a82ad4;
+    background: var(--sub2-600);
     border: none;
 }
 
@@ -439,7 +439,7 @@
     font-size: 18px;
     font-weight: 900;
     line-height: 24px;
-    color: #fff;
+    color: var(--main-100);
 }
 .business .contentArea .box {
     width: 296px;
@@ -482,7 +482,7 @@
     background: rgba(0, 0, 0, 0.33);
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: var(--main-100);
     z-index: 10;
     display: flex;
     align-items: center;
@@ -535,7 +535,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background: #bdbdbd;
+    background: var(--main-200);
 }
 .ourHistory .historyArea .hSlider {
     /*width: 1920px;*/
@@ -557,7 +557,7 @@
     height: 16px;
     margin: 0 auto;
     border-radius: 50%;
-    background: #fff;
+    background: var(--main-100);
 }
 .ourHistory .historyArea .hSlider .textWrap .years {
     display: block;
@@ -569,7 +569,7 @@
     margin-top: 8px;
 }
 .ourHistory .historyArea .hSlider .textWrap .time li {
-    color: #bdbdbd;
+    color: var(--main-200);
     font-size: 12px;
     line-height: 20px;
     margin-top: 4px;
@@ -646,7 +646,7 @@
     padding: 36px 32px 36px 32px;
     font-size: 28px;
     line-height: 36px;
-    color: #d6f3fa;
+    color: var(--sub3-100);
 }
 .ourTeam .accordionArea .accordion li .team h3 {
     font-size: 28px;
@@ -656,7 +656,7 @@
     transition: 0.5s;
 }
 .ourTeam .accordionArea .accordion li .team h3.on {
-    color: #62b3c5;
+    color: var(--sub3-400);
 
     transition: 0.5s;
 }
@@ -674,7 +674,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    background: #fff;
+    background: var(--main-100);
 }
 .ourTeam .accordionArea .accordion li .team .accordionBtn span:nth-child(1) {
     width: 24px;
@@ -721,7 +721,7 @@
     height: 56px;
     margin-top: 32px;
     border: none;
-    color: #fff;
+    color: var(--main-100);
     font-size: 18px;
     line-height: 24px;
     border-radius: 4px;
