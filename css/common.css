@@ -50,7 +50,7 @@ body {
     /*display: none;*/
 }
 .header.on {
-    background: #000;
+    background: var(--main-800);
     /*border-bottom: 2px solid #a82ad4;*/
     z-index: 1000;
 }
@@ -170,10 +170,17 @@ body {
     top: 80px;
     border-top: 2px solid #757575;
     box-sizing: border-box;
+    background: transparent;
 
+    transition: 0.5s;
     /*height: 48px;*/
     /*background: green;*/
 }
+.breadCrumbs.on {
+     background: var(--main-800);
+     z-index: 1000;
+}
+
 .breadCrumbs .location {
     font-size: 0;
     margin-left: 70px;

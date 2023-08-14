@@ -3,6 +3,7 @@ let $winW = $win.innerWidth();
 let $winH = $win.innerHeight();
 let scrollTop = 0;
 const $header = $(".header");
+const $bread = $(".breadCrumbs");
 
 const $footer = $(".footer");
 const $quickTop = $("#quickTop");
@@ -12,7 +13,6 @@ const $hSlider  = $("#hSlider");
 
 
 // header
-
 // 윈도우에서 스크롤을 이동하면 발생되는 이벤트
 $(window).on("scroll", function() {
     scrollTop = $(this).scrollTop();
@@ -65,9 +65,11 @@ $('.chatDiv').hover(function() {
 
 function scrollHeaderEvent() {
     if (scrollTop > 1) {
-        $(".header").addClass("on");
+        $header.addClass("on");
+        $bread.addClass("on");
     } else {
-        $(".header").removeClass("on");
+        $header.removeClass("on");
+        $bread.removeClass("on");
     }
 }
 
@@ -91,15 +93,6 @@ function scrollEvent(){
     }
 }
 
-
-
-
-// footer,.. 안된다..
-// $footer.find(".imgWrap").on("mouseenter", function () {
-//     const $snsImg = $(this).find(".img");
-//
-//     $snsImg.html(`<img src="../images/button/img_sns_instargram_hover.png" alt="#">`);
-// });
 
 // footer sns icon hover
 $('#sns_instagram').hover(function() {
