@@ -4,15 +4,7 @@
 /*Roboto*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-body {
-    font-family:"Roboto semibold", sans-serif;
-    background: black;
-    /*width: 1920px;*/
-    margin: 0 auto;
-    box-sizing: border-box;
-    color: #fff;
-}
-
+/*color settings*/
 :root {
     --main-100: #fff;
     --main-200: #bdbdbd;
@@ -26,6 +18,16 @@ body {
 
     --sub3-100: #d6f3fa;
     --sub3-400: #62b3c5;
+}
+
+
+body {
+    font-family:"Roboto semibold", sans-serif;
+    background: black;
+    /*width: 1920px;*/
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: var(--main-100);
 }
 
 /*header*/
@@ -117,7 +119,7 @@ body {
 .header .headerWrap nav .gnb li > a:hover {
     /*border-bottom: 1px solid #fff;*/
     /*background: dodgerblue;*/
-    color: #f78efb;
+    color: var(--sub2-300);
 }
 
 .header .headerWrap nav .gnb li:nth-child(1) > a {
@@ -234,7 +236,7 @@ section .subTit p {
     opacity: 0;
 
     margin-left: 50px;
-    color: #fff;
+    color: var(--main-100);
 }
 .quickBtnArea .chatDiv .quickBtnTextWrap p:nth-child(1) {
     display: block;
