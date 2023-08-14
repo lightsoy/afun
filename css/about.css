@@ -108,7 +108,7 @@
 .ciGuide .contentArea .textArea .textWrap p {}
 
 .ciGuide .contentArea .btnWrap {}
-.ciGuide .contentArea .btnWrap button {
+.ciGuide .contentArea .btnWrap .btn {
     width: 384px;
     height: 56px;
     background: url("../images/button/img_button_sub_about_guide.svg") no-repeat center /100%;
@@ -119,8 +119,8 @@
     line-height: 24px;
     border-radius: 4px;
 }
-.ciGuide .contentArea .btnWrap button.color {}
-.ciGuide .contentArea .btnWrap button.mono {}
+.ciGuide .contentArea .btnWrap .btn.color {}
+.ciGuide .contentArea .btnWrap .btn.mono {}
 
 
 .ciGuide .contentArea .imgArea {
