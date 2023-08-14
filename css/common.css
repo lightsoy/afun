@@ -383,6 +383,7 @@ footer .bottomArea .snsLink {
 footer .bottomArea .snsLink .imgWrap {
     width: 40px;
     height: 40px;
+    cursor: pointer;
     /*background: blueviolet;*/
 }
 footer .bottomArea .snsLink .imgWrap img {

@@ -95,21 +95,35 @@ function scrollEvent(){
 
 
 // footer sns icon hover
-$('#sns_instagram').hover(function() {
-    $('#sns_instagram img').attr("src", "images/button/img_sns_instargram_hover.png");
-}, function() {
-    $('#sns_instagram img').attr("src", "images/button/img_sns_instargram.png");
-});
+// $('#sns_instagram').hover(function() {
+//     $('#sns_instagram img').attr("src", "images/button/img_sns_instargram_hover.png");
+// }, function() {
+//     $('#sns_instagram img').attr("src", "images/button/img_sns_instargram.png");
+// });
+//
+// $('#sns_twitter').hover(function() {
+//     $('#sns_twitter img').attr("src", "images/button/img_sns_twitter_hover.png");
+// }, function() {
+//     $('#sns_twitter img').attr("src", "images/button/img_sns_twitter.png");
+// });
+//
+// $('#sns_youtube').hover(function() {
+//     $('#sns_youtube img').attr("src", "images/button/img_sns_youtube_hover.png");
+// }, function() {
+//     $('#sns_youtube img').attr("src", "images/button/img_sns_youtube.png");
+// });
 
-$('#sns_twitter').hover(function() {
-    $('#sns_twitter img').attr("src", "images/button/img_sns_twitter_hover.png");
-}, function() {
-    $('#sns_twitter img').attr("src", "images/button/img_sns_twitter.png");
-});
 
-$('#sns_youtube').hover(function() {
-    $('#sns_youtube img').attr("src", "images/button/img_sns_youtube_hover.png");
-}, function() {
-    $('#sns_youtube img').attr("src", "images/button/img_sns_youtube.png");
-});
+// footer sns icon hover re
 
+const $snsLinkImg = $(".snsLink .imgWrap");
+$snsLinkImg.on("mouseenter", function () {
+    const imgSrc = $(this).find("img").attr("src").replace(".png", "_hover.png");
+
+    $(this).find("img").attr("src", imgSrc);
+
+}).on("mouseleave", function () {
+    const imgSrc = $(this).find("img").attr("src").replace("_hover.png", ".png");
+
+    $(this).find("img").attr("src", imgSrc);
+});
