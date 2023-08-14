@@ -83,7 +83,11 @@
 .partnersInfo .imgArea .imgWrap .img {
     width: 180px;
     height: 120px;
-    background: url("../images/partners/img_partners_1.png")no-repeat center / cover;
+    /*background: url("../images/partners/img_partners_1.png")no-repeat center / cover;*/
+}
+.partnersInfo .imgArea .imgWrap .img img {
+    width: 100%;
+    /*border: 1px solid red;*/
 }
 
 /*awards*/
@@ -117,6 +121,7 @@
     /*width: 326px;*/
     width: 240px;
     margin: 0 54px;
+    cursor: pointer;
 }
 
 .awards .slideArea .aSlider .awardsItem .awardsBg {
@@ -136,7 +141,7 @@
     line-height: 24px;
     font-weight: 900;
 
-    white-space: pre-wrap;
+    white-space: nowrap;
 }
 
 .awards .slideArea .aSlider .awardsItem .awardsYears {
@@ -252,12 +257,26 @@
 }
 
 /*adBanner*/
-.adBanner .bannerArea .textWrap {
+.adBanner a {
+    text-decoration: none;
+    color: inherit;
+}
+.adBanner a .bannerArea .bannerTit {
     transform: translateY(50%);
     opacity: 0;
 }
-.adBanner .ani.on .textWrap {
+.adBanner a .ani.on .bannerTit {
     transform: translateY(0);
     opacity: 1;
     transition: 0.5s;
+}
+.adBanner a .bannerArea .adBtn {
+    transform: translateY(50%);
+    opacity: 0;
+}
+.adBanner a .ani.on .adBtn {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.2s;
 }
