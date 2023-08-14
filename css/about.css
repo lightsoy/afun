@@ -1,0 +1,9 @@
+body {
+    width: 1920px;
+}
+
+div {
+    width: 1920px;
+    height: 3247px;
+    /*background: url("images/sub_about/img_sub_about_dark.jpg") no-repeat center /100%;*/
+}

@@ -103,9 +103,10 @@
 
 
 /*partnersInfo*/
-.partnersInfo {}
+.partnersInfo {
+    padding-top: 120px;
+}
 .partnersInfo .textArea {
-    margin-top: 120px;
     text-align: center;
 }
 .partnersInfo .textArea .titWrap {}
@@ -121,18 +122,16 @@
 .partnersInfo .imgArea .imgWrap .img {
     width: 180px;
     height: 120px;
-    /*background: url("../images/partners/img_partners_1.png")no-repeat center / cover;*/
-}
-.partnersInfo .imgArea .imgWrap .img img {
-    width: 100%;
-    object-fit: cover;
-    /*border: 1px solid red;*/
+    background: url("../images/partners/img_partners_1.png")no-repeat center / cover;
 }
 
 /*awards*/
-.awards {}
+.awards {
+    padding-top: 80px;
+    /*padding: 80px 0 120px;*/
+    /*background: dodgerblue;*/
+}
 .awards .textArea {
-    margin-top: 120px;
     text-align: center;
 }
 .awards .textArea .titWrap {}
@@ -140,21 +139,27 @@
 
 .awards .slideArea {
     position: relative;
-    /*margin: 72px 128px 0 128px;*/
     margin-top: 72px;
-    background: pink;
+    /*width: 1440px;*/
+    /*margin: 72px 128px 0 128px;*/
+    /*background: yellowgreen;*/
 }
-.awards .slideArea .aSlider {}
+.awards .slideArea .aSlider {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+.awards .slideArea .aSlider .slick-list {
+    margin: 0 56px;
+}
 .awards .slideArea .aSlider .awardsItem {
-    /*padding-left: 24px;*/
-    /*margin: 0 12px;*/
+    /*width: 326px;*/
+    width: 240px;
+    margin: 0 54px;
 }
-.awards .slideArea .aSlider .awardsItem:last-child {
-    /*padding-left: 0;*/
-}
+
 .awards .slideArea .aSlider .awardsItem .awardsBg {
     position: relative;
-
     width: 240px;
     height: 220px;
     background: url("../images/sub_business/img_sub_business_awards_bg.png") no-repeat center / cover;
@@ -182,7 +187,7 @@
     font-size: 22px;
     line-height: 28px;
     font-weight: 900;
-    background: dodgerblue;
+    /*background: dodgerblue;*/
 }
 
 .awards .slideArea :is(.prevArrow, .nextArrow) {
@@ -190,23 +195,64 @@
     top: 50%;
     width: 32px;
     height: 32px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% cover;*/
     cursor: pointer;
 
+    vertical-align: center;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+
     transform: translateY(-50%);
-    background: dodgerblue;
+    /*background: dodgerblue;*/
 }
 .awards .slideArea .prevArrow {
     left: 0;
+    /*background: url("../images/dark_mode/ico_right.png")no-repeat center / 100% 100%;*/
 }
-.awards .slideArea .nextArrow {
-    right: 0;
+.awards .slideArea .prevArrow i {}
+
+.awards .slideArea .nextArrow {right: 0;}
+.awards .slideArea .nextArrow i {}
+
+
+
+.adBanner {
+    padding-top: 120px;
+    box-sizing: border-box;
+    /*background: #62b3c5;*/
+}
+.adBanner .bannerArea {
+    height: 256px;
+    display: flex;
+    align-items: center;
+    background: url("../images/sub_business/img_sub_business_ad_banner_bg.png") no-repeat center / cover;
+}
+.adBanner .bannerArea .textWrap {
+    /*margin-top: 80px;*/
+    /*background: dodgerblue;*/
+}
+.adBanner .bannerArea .bannerTit strong {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 900;
+    text-align: center;
+}
+.adBanner .bannerArea .adBtn {
+    width: 131px;
+    height: 40px;
+    margin-top: 24px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
 }
 
 
 
-/**/
+/*text scroll ani*/
+/*business*/
 .businessInfo .textArea :is(.titWrap, .textWrap) {
     transform: translateX(-2%);
     opacity: 0;
@@ -220,4 +266,37 @@
 }
 .businessInfo .ani.on .textWrap {
     transition-delay: 0.2s;
+}
+
+/*partnersInfo*/
+.partnersInfo .textArea .titWrap {
+    transform: translateY(50%);
+    opacity: 0;
+}
+.partnersInfo .ani.on .titWrap {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*awards*/
+.awards .textArea .titWrap {
+    transform: translateY(50%);
+    opacity: 0;
+}
+.awards .ani.on .titWrap {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*adBanner*/
+.adBanner .bannerArea .textWrap {
+    transform: translateY(50%);
+    opacity: 0;
+}
+.adBanner .ani.on .textWrap {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
 }
