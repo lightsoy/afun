@@ -1,5 +1,13 @@
 @import "common.css";
 
+body.light-mode .header {
+    color: var(--main-100);
+}
+
+body.light-mode .header .headerWrap .logo a {
+    background: url("../images/dark_mode/logo.png")no-repeat center /100%;
+}
+
 /*visual*/
 .visual {
     height: 100vh;
@@ -60,6 +68,10 @@
     line-height: 72px;
     font-weight: 900;
 }
+body.light-mode .visual .contentArea .visualTitArea h2 {
+    color: var(--main-100);
+}
+
 .visual .contentArea .ctrlBtn {
     position: absolute;
     left: 0;
@@ -103,17 +115,7 @@
 
     text-align: center;
 }
-/*.visual .contentArea .scrollArea .scrollBtn i {*/
-/*    position: absolute;*/
-/*    bottom: 12px;*/
-/*    left: 20%;*/
-/*    !*left: 50%;*!*/
-/*    !*transform: translateX(-50%);*!*/
 
-/*    animation: scrollBtnAni 1.2s ease-in-out infinite;*/
-/*    !*border: 1px solid red;*!*/
-/*    !*box-sizing: border-box;*!*/
-/*}*/
 .visual .contentArea .scrollArea .scrollBtn img {
         position: absolute;
         bottom: 12px;
@@ -141,6 +143,9 @@
 
     box-sizing: border-box;
     /*border: 1px solid red;*/
+}
+body.light-mode .visual .contentArea .scrollArea span {
+    color: var(--main-100);
 }
 
 .visual .contentArea .aboutBtn {
@@ -228,8 +233,13 @@
 .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .date {
     font-size: 18px;
     line-height: 24px;
-    color: #d6f3fa;
+    color: var(--sub3-100);
 }
+body.light-mode .ourWorks .textGroup .textArea .textWrap :is(.cate, .date),
+body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date) {
+    color: var(--sub3-500);
+}
+
 .ourWorks .textGroup .textArea .textWrap .cate,
 .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .cate {font-weight: 900;}
 .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .date {
@@ -299,12 +309,16 @@
     color: var(--main-100);
     border: none;
     cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
 
     border-radius: 4px;
-    background: url("../images/button/img_button_our_works_1.svg") no-repeat left top / cover;
+    background: url("../images/button/img_button_our_works.svg") no-repeat left top / cover;
     background-blend-mode: overlay, normal, normal;
 
 }
+
 
 /* slideArea */
 .ourWorks .slideArea {
@@ -435,9 +449,13 @@
     font-size: 48px;
     line-height: 56px;
     font-weight: 900;
-    color: #fff;
+    color: var(--main-100);
     /*background: rebeccapurple;*/
 }
+body.light-mode .business .textArea .titWrap h2 {
+    color: var(--main-800);
+}
+
 .business .textArea .textWrap {
     margin-left: 48px;
 }
@@ -540,11 +558,15 @@
     vertical-align: center;
 }
 .ourHistory .textArea .titWrap {}
-.ourHistory .textArea .titWrap h2 {}
+body.light-mode .ourHistory .textArea .titWrap h2 {
+    color: var(--main-100);
+}
 .ourHistory .textArea .titWrap .subTit {
     margin-top: 16px;
 }
-.ourHistory .textArea .titWrap .subTit p {}
+body.light-mode .ourHistory .textArea .titWrap .subTit p {
+    color: var(--main-200);
+}
 
 
 
@@ -585,6 +607,10 @@
     font-size: 22px;
     line-height: 28px;
     margin-top: 24px;
+}
+
+body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
+    color: var(--main-100);
 }
 .ourHistory .historyArea .hSlider .textWrap .time {
     margin-top: 8px;
@@ -629,11 +655,14 @@
     display: inline-block;
     margin-top: 24px;
     padding-bottom: 4px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--main-100);
     font-size: 14px;
     line-height: 16px;
 
-    /*cursor: pointer;*/
+}
+
+body.light-mode .ourTeam .textArea .titWrap span {
+    border-bottom: 2px solid var(--main-800);
 }
 .ourTeam .textArea .titWrap span:after {
     display: inline-block;
@@ -641,9 +670,13 @@
     width: 16px;
     height: 16px;
     vertical-align: middle;
-    margin-left: 8px;
+    margin: 0 0 2px 8px;
     /*border: 1px solid red;*/
     background: url("../images/dark_mode/ico_right.png") no-repeat center/ cover;
+}
+
+body.light-mode .ourTeam .textArea .titWrap span:after {
+    background: url("../images/light_mode/ico_right.png") no-repeat center/ cover;
 }
 
 .ourTeam .textArea .titWrap span a {
@@ -657,12 +690,19 @@
 }
 .ourTeam .accordionArea .accordion {}
 .ourTeam .accordionArea .accordion > li {
-    border-top: 2px solid #4e4e4e;
+    border-top: 2px solid var(--main-400);
     box-sizing: border-box;
     cursor: pointer;
 }
+body.light-mode .ourTeam .accordionArea .accordion > li {
+    border-top: 2px solid var(--main-200);
+}
+
 .ourTeam .accordionArea .accordion > li:last-child {
-    border-bottom: 2px solid #4e4e4e;
+    border-bottom: 2px solid var(--main-400);
+}
+body.light-mode .ourTeam .accordionArea .accordion > li:last-child {
+    border-bottom: 2px solid var(--main-200);
 }
 
 .ourTeam .accordionArea .accordion li > .team {
@@ -674,6 +714,11 @@
     line-height: 36px;
     color: var(--sub3-100);
 }
+
+body.light-mode .ourTeam .accordionArea .accordion li > .team {
+    color: var(--sub3-300);
+}
+
 .ourTeam .accordionArea .accordion li .team h3 {
     font-size: 28px;
     line-height: 36px;
@@ -686,6 +731,10 @@
 
     transition: 0.5s;
 }
+body.light-mode .ourTeam .accordionArea .accordion li .team h3.on {
+    color: var(--sub3-500);
+}
+
 
 .ourTeam .accordionArea .accordion li .team .accordionBtn {
     position: relative;
@@ -742,6 +791,11 @@
     font-weight: 900;
     text-align: center;
 }
+
+body.light-mode .apply .bannerArea strong {
+    color: var(--main-100);
+}
+
 .apply .bannerArea .applyBtn {
     width: 240px;
     height: 56px;
@@ -826,8 +880,15 @@
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
 }
+body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover {
     background: rgba(255, 255, 255, 0.12);
+}
+body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover {
+    background: rgba(0, 0, 0, 0.12);
 }
 
 .partners .rollingArea .rolling .logoWrap .rollingImgWrap~.rollingImgWrap {
@@ -841,9 +902,6 @@
 
 
 /* Scroll text Animation */
-
-
-
 /**/
 .business .textArea :is(.titWrap, .textWrap) {
     transform: translateX(-2%);

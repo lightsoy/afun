@@ -10,24 +10,45 @@
     --main-200: #bdbdbd;
     --main-300: #757575;
     --main-400: #4e4e4e;
+    --main-600: #373737;
+    --main-700: #222;
     --main-800: #000;
+
+    --sub1-100: #d0caf5;
 
     --sub2-300: #f78efb;
     --sub2-600: #a82ad4;
     --sub2-700: #6204bf;
 
     --sub3-100: #d6f3fa;
+    --sub3-300: #8ed2e1;
     --sub3-400: #62b3c5;
+    --sub3-500: #2c99b1;
+    --sub3-600: #08748c;
+    --sub3-700: #195974;
 }
+::selection {
+    background: var(--sub2-600);
+    color: var(--sub2-300);
+}
+
 
 
 body {
     font-family:"Roboto semibold", sans-serif;
-    background: black;
+    background: var(--main-800);
     /*width: 1920px;*/
     margin: 0 auto;
     box-sizing: border-box;
     color: var(--main-100);
+}
+body.light-mode {
+    background: var(--main-100);
+    color: var(--main-800);
+}
+
+button {
+    font-family: "Roboto semibold", sans-serif;
 }
 
 /*header*/
@@ -49,12 +70,19 @@ body {
 
     /*display: none;*/
 }
+body.light-mode .header {
+    color: var(--main-800);
+}
+
 .header.on {
     background: var(--main-800);
     /*border-bottom: 2px solid #a82ad4;*/
     z-index: 1000;
 }
-
+body.light-mode .header.on {
+    background: var(--main-100);
+    color: var(--main-800);
+}
 
 .header .headerWrap {
     position: relative;
@@ -75,11 +103,16 @@ body {
     display: block;
     width: 160px;
     height: 61px;
+
+    background: url("../images/dark_mode/logo.png")no-repeat center /100%;
 }
-.header .headerWrap .logo a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+body.light-mode .header .headerWrap .logo a {
+    background: url("../images/light_mode/logo.png")no-repeat center /100%;
+}
+
+body.light-mode .header.on .headerWrap .logo a {
+    background: url("../images/light_mode/logo.png")no-repeat center /100%;
 }
 
 .header .headerWrap nav {
@@ -180,7 +213,9 @@ body {
      background: var(--main-800);
      z-index: 1000;
 }
-
+body.light-mode .breadCrumbs.on {
+    background: var(--main-100);
+}
 .breadCrumbs .location {
     font-size: 0;
     margin-left: 70px;
@@ -209,7 +244,9 @@ body {
     /*border: 1px solid red;*/
     /*box-sizing: border-box;*/
 }
-
+body.light-mode .breadCrumbs .location .loca-1:after {
+    background: url("../images/light_mode/ico_right.png") no-repeat center/ 100% 100%;
+}
 
 
 /*section 공통 적용 */
@@ -228,16 +265,22 @@ section .titWrap h2 {
     font-size: 48px;
     line-height: 40px;
     font-weight: 900;
-    color: #fff;
+    color: var(--main-100);
 }
+body.light-mode section .titWrap h2 {
+    color: var(--main-800);
+}
+
 section .subTit {}
 section .subTit p {
     font-size: 14px;
     line-height: 20px;
     font-weight: 900;
-    color: #bdbdbd;
+    color: var(--main-200);
 }
-
+body.light-mode section .subTit p {
+    color: var(--main-600);
+}
 
 /*fixed quickBtnArea*/
 .quickBtnArea {
@@ -363,7 +406,7 @@ footer .divider {
     width: 100%;
     height: 2px;
     margin-top: 16px;
-    background: #757575;
+    background: var(--main-300);
     /*background: brown;*/
 }
 footer .bottomArea {
@@ -380,7 +423,7 @@ footer .bottomArea .copyRight {
 footer .bottomArea .snsLink {
     display: flex;
     gap: 16px;
-    color: #757575;
+    color: var(--main-300);
 }
 footer .bottomArea .snsLink .imgWrap {
     width: 40px;

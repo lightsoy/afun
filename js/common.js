@@ -32,40 +32,66 @@ $(window).on("resize", function() {
     scrollEvent();
 });
 
+
+
 const $modeBtn = $header.find(".modeBtn");
 
 // mode toggle
-
-if (colorMode === "dark") {
-    setDark();
-} else {
-    setLight();
-}
-
 $modeBtn.on("click", function () {
-    $(this).toggleClass("on");
-    changeMode();
+    $modeBtn.toggleClass("light-mode");
+
+    if ($modeBtn.hasClass("light-mode")) {
+
+        const imgSrc = $(this).find("img").attr("src").replace(".png", "_light.png");
+
+        $(this).find("img").attr("src", imgSrc);
+        $body.addClass("light-mode");
+
+
+    } else {
+        const imgSrc = $(this).find("img").attr("src").replace("_light.png", ".png");
+
+        $(this).find("img").attr("src", imgSrc);
+        $body.removeClass("light-mode");
+    }
 });
 
-function changeMode() {
-    if ($body.hasClass("dark-mode")) {
-        localStorage.setItem("lightMode", "light");
-        setLight();
-    } else {
-        localStorage.setItem("lightMode", "dark");
-        setDark();
-    }
-}
+//     $(this).toggleClass("on");
+//     changeMode();
+// });
 
-function setDark () {
-    $body.addClass("dark-mode");
-    $modeBtn.src("img").attr("");
-}
-function setLight () {
-    $body.removeClass("dark-mode");
-    $body.addClass("dark-mode");
-}
 
+// // ---------다크모드 시도 1-----------
+// if (colorMode === "dark") {
+//     setDark();
+// } else {
+//     setLight();
+// }
+//
+// $modeBtn.on("click", function () {
+//     $(this).toggleClass("on");
+//     changeMode();
+// });
+//
+// function changeMode() {
+//     if ($body.hasClass("dark-mode")) {
+//         localStorage.setItem("lightMode", "light");
+//         setLight();
+//     } else {
+//         localStorage.setItem("lightMode", "dark");
+//         setDark();
+//     }
+// }
+//
+// function setDark () {
+//     $body.addClass("dark-mode");
+//     $modeBtn.src("img").attr("");
+// }
+// function setLight () {
+//     $body.removeClass("dark-mode");
+//     $body.addClass("dark-mode");
+// }
+// // ---------다크모드 시도 1-----------
 
 // MOVE_TOP_BTN ani
 $(function() {

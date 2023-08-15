@@ -1,5 +1,9 @@
 @import "common.css";
 
+.header .headerWrap nav .gnb li:nth-child(1) {
+    color: var(--sub2-300);
+}
+
 .afunInfo {
     padding-top: 128px;
 }
@@ -20,6 +24,11 @@
     transform: translateY(10px);
     opacity: 0;
 }
+
+body.light-mode .afunInfo .imgWrap .textArea .titWrap h2 {
+    color: var(--main-100);
+}
+
 .afunInfo .imgWrap .textArea .ani.on h2 {
     transform: translateY(0);
     opacity: 1;
@@ -101,6 +110,12 @@
     border-radius: 50%;
     background: var(--main-100);
 }
+
+body.light-mode .ourHistory .historyArea .hSlider .textWrap .textDot {
+
+    background: var(--main-800);
+}
+
 .ourHistory .historyArea .hSlider .textWrap .years {
     display: block;
     font-size: 22px;
@@ -115,6 +130,10 @@
     font-size: 12px;
     line-height: 20px;
     margin-top: 4px;
+}
+
+body.light-mode .ourHistory .historyArea .hSlider .textWrap .time li {
+    color: var(--main-600);
 }
 
 .ourHistory .titWrap :is(h2, .subTit) {
@@ -192,6 +211,10 @@
     color: var(--main-200);
 }
 
+body.light-mode .ciGuide .contentArea .textArea .textWrap p {
+    color: var(--main-600);
+}
+
 
 .ciGuide .contentArea .textArea .btnWrap {
     /*margin-top: 36px;*/
@@ -220,6 +243,13 @@
     background: url("../images/button/img_button_sub_about_guide_click.svg") no-repeat center /100%;
 }
 
+body.light-mode .ciGuide .contentArea .textArea .btnWrap .btn.on span {
+    color: var(--main-800);
+}
+body.light-mode .ciGuide .contentArea .textArea .btnWrap .btn.on .arrowIcon {
+    background: url("../images/light_mode/ico_sub_about_guide.png") no-repeat center / 100%;
+}
+
 .ciGuide .contentArea .textArea .btnWrap .btn.color {}
 .ciGuide .contentArea .textArea .btnWrap .btn.mono {margin-top: 16px;}
 
@@ -229,7 +259,7 @@
 .ciGuide .contentArea .textArea .btnWrap .btn .arrowIcon {
     width: 64px;
     height: 32px;
-    background: url("../images/button/ico_sub_about_guide.png") no-repeat center / 100%;
+    background: url("../images/dark_mode/ico_sub_about_guide.png") no-repeat center / 100%;
     margin-right: 24px;
 }
 
@@ -246,6 +276,12 @@
     border: 2px solid var(--main-400);
     box-sizing: border-box;
 }
+body.light-mode .ciGuide .contentArea .imgArea .horizontalLogo {
+    background: url("../images/light_mode/logo_ci_guide_horizontal.png") no-repeat center / 100% 100%;
+    border: 2px solid var(--main-200);
+}
+
+
 .ciGuide .contentArea .imgArea .verticalLogo {
     /*width: 502px;*/
     width: 100%;
@@ -256,10 +292,14 @@
     border: 2px solid var(--main-400);
     box-sizing: border-box;
 }
+body.light-mode .ciGuide .contentArea .imgArea .verticalLogo {
+
+    background: url("../images/light_mode/logo_ci_guide_vertical.png") no-repeat center / 100% 100%;
+    border: 2px solid var(--main-200);
+}
 
 
-
-/*}*/
+    /*}*/
 
 .concept {
     padding-bottom: 120px;
