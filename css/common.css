@@ -317,6 +317,8 @@ section .subTit p {
     margin-top: 18px;
     background: url("../images/button/img_button_Arrow_top.png")no-repeat center/cover;
     cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /*footer*/
@@ -384,6 +386,8 @@ footer .bottomArea .snsLink .imgWrap {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
     /*background: blueviolet;*/
 }
 footer .bottomArea .snsLink .imgWrap img {

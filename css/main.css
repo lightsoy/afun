@@ -103,16 +103,28 @@
 
     text-align: center;
 }
-.visual .contentArea .scrollArea .scrollBtn i {
-    position: absolute;
-    bottom: 12px;
-    left: 20%;
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
+/*.visual .contentArea .scrollArea .scrollBtn i {*/
+/*    position: absolute;*/
+/*    bottom: 12px;*/
+/*    left: 20%;*/
+/*    !*left: 50%;*!*/
+/*    !*transform: translateX(-50%);*!*/
 
-    animation: scrollBtnAni 1.2s ease-in-out infinite;
-    /*border: 1px solid red;*/
-    /*box-sizing: border-box;*/
+/*    animation: scrollBtnAni 1.2s ease-in-out infinite;*/
+/*    !*border: 1px solid red;*!*/
+/*    !*box-sizing: border-box;*!*/
+/*}*/
+.visual .contentArea .scrollArea .scrollBtn img {
+        position: absolute;
+        bottom: 12px;
+        left: 28%;
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+
+        animation: scrollBtnAni 1.2s ease-in-out infinite;
+        /*border: 1px solid red;*/
+        /*box-sizing: border-box;*/
+
 }
 
 @keyframes scrollBtnAni {
@@ -211,6 +223,7 @@
 
     font-size: 22px;
     line-height: 28px;
+    font-weight: 700;
     /*margin: 8px 0;*/
     margin-top: 8px;
 }
@@ -320,6 +333,7 @@
 
      z-index: 20;
      padding: 16px;
+     cursor: pointer;
  }
 .wSlideWrap .prevArrow {
     left: 0;

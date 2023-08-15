@@ -10,10 +10,10 @@ const $video = $(".visual .videoFrame video").get(0);
 $ctrlBtn.find(".sound").on("click", function() {
    if ($video.muted === false) {
        $video.muted = true;
-       $(this).find("img").attr("src", "images/button/img_controler_sound.png");
+       $(this).find("img").attr("src", "images/button/img_controler_mute.png");
    } else {
        $video.muted = false;
-       $(this).find("img").attr("src", "images/button/img_controler_mute.png");
+       $(this).find("img").attr("src", "images/button/img_controler_sound.png");
    }
 });
 
