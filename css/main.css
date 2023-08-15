@@ -118,13 +118,8 @@
         position: absolute;
         bottom: 12px;
         left: 28%;
-        /*left: 50%;*/
-        /*transform: translateX(-50%);*/
 
         animation: scrollBtnAni 1.2s ease-in-out infinite;
-        /*border: 1px solid red;*/
-        /*box-sizing: border-box;*/
-
 }
 
 @keyframes scrollBtnAni {
@@ -326,21 +321,25 @@
     width: 100%;
 }
 .wSlideWrap :is(.prevArrow, .nextArrow) {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     font-size: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /*font-size: 40px;*/
+    width: 24px;
+    height: 24px;
 
-     z-index: 20;
-     padding: 16px;
-     cursor: pointer;
+    z-index: 20;
+    padding: 16px;
+    cursor: pointer;
  }
 .wSlideWrap .prevArrow {
     left: 0;
     transform: translateX(-100%) translateY(-50%);
+    background: url("../images/dark_mode/ico_left_large.png") no-repeat center / 100%;
 }
 .wSlideWrap .nextArrow {
     right: 0;
+    background: url("../images/dark_mode/ico_right_large.png") no-repeat center / 100%;
 }
 
 .wSlideWrap .wSlideImgWrap {}
@@ -458,11 +457,18 @@
 .business .contentArea .box {
     width: 296px;
     position: relative;
-    cursor: pointer;
 }
 .business .contentArea .box:nth-child(2){
     margin: 96px 48px 0;
 }
+
+.business .contentArea .box a {
+    border-radius: 16px;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+}
+
 .business .contentArea .box .boxImg {
     position: relative;
     height: 296px;
@@ -627,7 +633,7 @@
     font-size: 14px;
     line-height: 16px;
 
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .ourTeam .textArea .titWrap span:after {
     display: inline-block;
@@ -638,6 +644,11 @@
     margin-left: 8px;
     /*border: 1px solid red;*/
     background: url("../images/dark_mode/ico_right.png") no-repeat center/ cover;
+}
+
+.ourTeam .textArea .titWrap span a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .ourTeam .accordionArea {
