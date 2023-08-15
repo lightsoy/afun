@@ -36,7 +36,7 @@ $(window).on("resize", function() {
 
 const $modeBtn = $header.find(".modeBtn");
 
-// mode toggle
+// light-mode toggle
 $modeBtn.on("click", function () {
     $modeBtn.toggleClass("light-mode");
 
@@ -47,6 +47,11 @@ $modeBtn.on("click", function () {
         $(this).find("img").attr("src", imgSrc);
         $body.addClass("light-mode");
 
+        // // a태그 새로고침 방지
+        // $('a').click(function(e) {
+        //     e.preventDefault();
+        // });
+
 
     } else {
         const imgSrc = $(this).find("img").attr("src").replace("_light.png", ".png");
@@ -56,42 +61,6 @@ $modeBtn.on("click", function () {
     }
 });
 
-//     $(this).toggleClass("on");
-//     changeMode();
-// });
-
-
-// // ---------다크모드 시도 1-----------
-// if (colorMode === "dark") {
-//     setDark();
-// } else {
-//     setLight();
-// }
-//
-// $modeBtn.on("click", function () {
-//     $(this).toggleClass("on");
-//     changeMode();
-// });
-//
-// function changeMode() {
-//     if ($body.hasClass("dark-mode")) {
-//         localStorage.setItem("lightMode", "light");
-//         setLight();
-//     } else {
-//         localStorage.setItem("lightMode", "dark");
-//         setDark();
-//     }
-// }
-//
-// function setDark () {
-//     $body.addClass("dark-mode");
-//     $modeBtn.src("img").attr("");
-// }
-// function setLight () {
-//     $body.removeClass("dark-mode");
-//     $body.addClass("dark-mode");
-// }
-// // ---------다크모드 시도 1-----------
 
 // MOVE_TOP_BTN ani
 $(function() {
