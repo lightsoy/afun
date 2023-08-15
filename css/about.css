@@ -299,8 +299,7 @@ body.light-mode .ciGuide .contentArea .imgArea .verticalLogo {
 }
 
 
-    /*}*/
-
+/*concept*/
 .concept {
     padding-bottom: 120px;
 }
@@ -349,6 +348,11 @@ body.light-mode .ciGuide .contentArea .imgArea .verticalLogo {
     font-weight: 700;
     color: var(--main-200);
 }
+
+body.light-mode .concept .textArea .titWrap .textWrap p {
+    color: var(--main-600);
+}
+
 .concept .textArea .titWrap .textWrap .keywordList {
     display: flex;
     gap: 32px;
@@ -360,6 +364,10 @@ body.light-mode .ciGuide .contentArea .imgArea .verticalLogo {
     color: var(--sub3-100);
 }
 
+body.light-mode .concept .textArea .titWrap .textWrap .keywordList li {
+    color: var(--sub3-500);
+}
+
 .concept .imgArea {
     margin-top: 52px;
     display: flex;
@@ -369,7 +377,6 @@ body.light-mode .ciGuide .contentArea .imgArea .verticalLogo {
 .concept .imgArea .conceptImg {
     width: 640px;
     height: 400px;
-    /*background: dodgerblue;*/
 }
 .concept .imgArea .conceptImg:nth-child(1) {
     background: url("../images/sub_about/about_concept_img_1.png") no-repeat center / 100%;

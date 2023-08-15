@@ -4,10 +4,6 @@ $hSlider.slick({
     variableWidth: true,
     focusOnSelect: true,
     arrows: false,
-
-    // centerMode: true,
-    // slidesToShow: 5,
-    // infinite:false,
 });
 
 // CI guide button click
@@ -24,24 +20,24 @@ $colorBtn.on("click", function () {
         $(this).closest(".contentArea").find(".verticalLogo").css({
             "background":`url("../images/light_mode/logo_ci_guide_vertical.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
         $(this).closest(".contentArea").find(".horizontalLogo").css({
             "background":`url("../images/light_mode/logo_ci_guide_horizontal.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
 
     } else {
         $(this).closest(".contentArea").find(".verticalLogo").css({
             "background":`url("../images/dark_mode/logo_ci_guide_vertical.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
         $(this).closest(".contentArea").find(".horizontalLogo").css({
             "background":`url("../images/dark_mode/logo_ci_guide_horizontal.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
     }
 });
@@ -53,24 +49,24 @@ $monoBtn.on("click", function () {
         $(this).closest(".contentArea").find(".verticalLogo").css({
             "background":`url("../images/light_mode/logo_ci_guide_vertical_mono.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
         $(this).closest(".contentArea").find(".horizontalLogo").css({
             "background":`url("../images/light_mode/logo_ci_guide_horizontal_mono.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
 
     } else {
         $(this).closest(".contentArea").find(".verticalLogo").css({
             "background":`url("../images/dark_mode/logo_ci_guide_vertical_mono.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
         $(this).closest(".contentArea").find(".horizontalLogo").css({
             "background":`url("../images/dark_mode/logo_ci_guide_horizontal_mono.png")`,
             "background-repeat" : "no-repeat",
-            "background-position":"center center",
+            "background-position": "center center",
         });
     }
 });
