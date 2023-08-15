@@ -365,71 +365,70 @@ body.light-mode section .subTit p {
 }
 
 /*footer*/
-footer {
+.footer {
     width: 100%;
     /*height: 270px;*/
-    padding: 67px 70px;
+    padding: 67px 0 70px;
     box-sizing: border-box;
     /*background: dodgerblue;*/
 
     font-size: 12px;
     line-height: 16px;
+    font-weight: 700;
 
     /*display: none;*/
 }
 
-footer .topArea {
+.footer .footerWrap {}
+
+.footer .footerWrap .topArea {
     display: flex;
     justify-content: space-between;
     /*border: 2px solid green;*/
     align-items: center;
 }
-footer .topArea .logo {
-    /*width: 160px;*/
-    /*height: 61px;*/
-    /*border: 2px solid red;*/
-}
-footer .topArea .logo a {
+.footer .footerWrap .topArea .logo {}
+.footer .footerWrap .topArea .logo a {
     display: block;
     width: 160px;
     height: 61px;
     background: url("../images/dark_mode/logo.png")no-repeat center /100%;
 }
-body.light-mode footer .topArea .logo a {
+body.light-mode .footer .footerWrap .topArea .logo a {
     background: url("../images/light_mode/logo.png")no-repeat center /100%;
 
 }
 
 
-footer .topArea .companyInfo {}
-footer .topArea .companyInfo p {
+.footer .footerWrap .topArea .companyInfo {}
+.footer .footerWrap .topArea .companyInfo p {
     text-align: right;
 }
 
-footer .divider {
+.footer .footerWrap .divider {
     width: 100%;
     height: 2px;
     margin-top: 16px;
     background: var(--main-300);
     /*background: brown;*/
 }
-footer .bottomArea {
+.footer .footerWrap .bottomArea {
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
     align-items: center;
 }
 
-footer .bottomArea .copyRight {
+.footer .footerWrap .bottomArea .copyRight {
     width: 324px;
     /*border: 2px solid red;*/
 }
-footer .bottomArea .snsLink {
+.footer .footerWrap .bottomArea .snsLink {
     display: flex;
     gap: 16px;
     color: var(--main-300);
 }
-footer .bottomArea .snsLink .imgWrap {
+.footer .footerWrap .bottomArea .snsLink .imgWrap {
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -437,28 +436,28 @@ footer .bottomArea .snsLink .imgWrap {
     overflow: hidden;
     /*background: blueviolet;*/
 }
-footer .bottomArea .snsLink .imgWrap img {
+.footer .footerWrap .bottomArea .snsLink .imgWrap img {
     display: block;
     width: 100%;
     object-fit: cover;
 }
-footer .bottomArea .emailRefuse {
+.footer .footerWrap .bottomArea .emailRefuse {
     width: 324px;
     text-align: right;
     /*border: 2px solid red;*/
 }
-footer .bottomArea .emailRefuse span {}
+.footer .footerWrap .bottomArea .emailRefuse span {}
 
 
 /*반응형*/
 @media (max-width: 1440px) {
-    .header .headerWrap .logo a {
-        width: 120px;
-    }
     .header .headerWrap {
         margin: 0 20px;
     }
 
+    .header .headerWrap .logo a {
+        width: 120px;
+    }
     .header .headerWrap nav .gnb li:nth-child(1) > a {
         width: 104px;
     }
@@ -502,13 +501,13 @@ footer .bottomArea .emailRefuse span {}
 }
 
 @media (max-width: 768px) {
-    .header .headerWrap .logo a {
-        width: 100px;
-    }
     .header .headerWrap {
         margin: 0 20px;
     }
 
+    .header .headerWrap .logo a {
+        width: 100px;
+    }
     .header .headerWrap nav .gnb li:nth-child(1) > a {
         width: 84px;
     }
@@ -524,6 +523,21 @@ footer .bottomArea .emailRefuse span {}
     .header .headerWrap nav .gnb li:nth-child(5) > a {
         width: 97px;
     }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer .footerWrap {
+        margin: 0 20px;
+    }
+    .footer .footerWrap .topArea .logo a {
+        width: 100px;
+    }
+    .footer .footerWrap .bottomArea .snsLink .imgWrap {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -533,6 +547,5 @@ footer .bottomArea .emailRefuse span {}
     .header .headerWrap nav .gnb {
         display: none; !important;
     }
-
 
 }
