@@ -460,27 +460,50 @@ footer .bottomArea .emailRefuse span {}
     }
 
     .header .headerWrap nav .gnb li:nth-child(1) > a {
-        width: 84px;
+        width: 104px;
     }
     .header .headerWrap nav .gnb li:nth-child(2) > a {
-        width: 106px;
+        width: 126px;
     }
     .header .headerWrap nav .gnb li:nth-child(3) > a {
-        width: 86px;
+        width: 106px;
     }
     .header .headerWrap nav .gnb li:nth-child(4) > a {
-        width: 80px;
+        width: 100px;
     }
     .header .headerWrap nav .gnb li:nth-child(5) > a {
-        width: 97px;
+        width: 117px;
     }
 }
 @media (max-width: 1024px) {
+
+    /*.header .headerWrap .logo a {*/
+    /*    width: 120px;*/
+    /*}*/
+    /*.header .headerWrap {*/
+    /*    margin: 0 20px;*/
+    /*}*/
+
+    /*.header .headerWrap nav .gnb li:nth-child(1) > a {*/
+    /*    width: 84px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(2) > a {*/
+    /*    width: 106px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(3) > a {*/
+    /*    width: 86px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(4) > a {*/
+    /*    width: 80px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(5) > a {*/
+    /*    width: 97px;*/
+    /*}*/
 }
 
 @media (max-width: 768px) {
     .header .headerWrap .logo a {
-        width: 80px;
+        width: 100px;
     }
     .header .headerWrap {
         margin: 0 20px;
@@ -503,4 +526,13 @@ footer .bottomArea .emailRefuse span {}
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .header .headerWrap nav {
+        display: none; !important;
+    }
+    .header .headerWrap nav .gnb {
+        display: none; !important;
+    }
+
+
+}
