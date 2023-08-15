@@ -52,12 +52,12 @@ $modeBtn.on("click", function () {
         //     e.preventDefault();
         // });
 
-
     } else {
         const imgSrc = $(this).find("img").attr("src").replace("_light.png", ".png");
 
         $(this).find("img").attr("src", imgSrc);
         $body.removeClass("light-mode");
+
     }
 });
 
