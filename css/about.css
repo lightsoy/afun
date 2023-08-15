@@ -378,6 +378,11 @@ body.light-mode .concept .textArea .titWrap .textWrap .keywordList li {
     width: 640px;
     height: 400px;
 }
+
+body.light-mode .concept .imgArea .conceptImg {
+    border: 1px solid var(--main-200);
+}
+
 .concept .imgArea .conceptImg:nth-child(1) {
     background: url("../images/sub_about/about_concept_img_1.png") no-repeat center / 100%;
 }
