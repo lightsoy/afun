@@ -326,7 +326,8 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
     left: 422px;
     top: 0;
     /*width: calc(1920px - 420px - 260px);*/
-    width: 1258px;
+    /*width: 1258px;*/
+    width: 87%;
     height: 400px;
 }
 
@@ -1023,14 +1024,14 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 @media (max-width: 1024px) {
     section {
         /*1024 - 70*/
-        min-width: 954px;
+        min-width: 784px;
     }
 
     .visual .videoFrame {
         min-width: 1024px;
     }
     .visual .contentArea {
-        max-width: 954px;
+        max-width: 784px;
     }
 
     .ourWorks .textGroup {
@@ -1069,7 +1070,8 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         margin-top: 8px;
     }
     .ourWorks .slideArea {
-        width:567px;
+        /*width:567px;*/
+        width: 62%;
     }
     .wSlideWrap :is(.prevArrow, .nextArrow) {
         width: 16px;
@@ -1082,6 +1084,9 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     }
     .wSlideWrap .wSlideImgWrap .wSlider .slick-slide img {
         height: 200px;
+    }
+    .ourWorks .wDotsWrap {
+        width: 360px;
     }
 
     .business .textArea .titWrap h2 {
@@ -1112,13 +1117,13 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         margin-top: 24px;
     }
 
-    .visual,
-    .ourWorks,
-    .business,
-    .ourHistory,
-    .partners {
-        display: none;
-    }
+    /*.visual,*/
+    /*.ourWorks,*/
+    /*.business,*/
+    /*.ourHistory,*/
+    /*.partners {*/
+    /*    display: none;*/
+    /*}*/
 }
 
 @media (max-width: 768px) {}
