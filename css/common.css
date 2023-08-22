@@ -49,6 +49,7 @@ body.light-mode {
 
 button {
     font-family: "Roboto semibold", sans-serif;
+    font-weight: 900;
 }
 
 /*header*/
@@ -491,6 +492,11 @@ body.light-mode .footer .footerWrap .topArea .logo a {
 }
 @media (max-width: 1024px) {
 
+    section {
+        /*1024 - 70*/
+        min-width: 784px;
+    }
+
     section .inner {
         width: 784px;
         margin: 0 auto;
@@ -546,6 +552,16 @@ body.light-mode .footer .footerWrap .topArea .logo a {
 
     .footer {
         padding: 40px 0;
+    }
+
+    section {
+        /*768 - 40*/
+        min-width: 728px;
+    }
+
+    section .inner {
+        width: 728px;
+        margin: 0 auto;
     }
 
     .footer .footerWrap {
