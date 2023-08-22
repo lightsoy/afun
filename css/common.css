@@ -473,8 +473,28 @@ body.light-mode .footer .footerWrap .topArea .logo a {
     .header .headerWrap nav .gnb li:nth-child(5) > a {
         width: 117px;
     }
+
+
+    section .inner {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    /*section title setting*/
+    section .titWrap {}
+    section .titWrap h2 {
+        font-size: 32px;
+        line-height: 24px;
+        font-weight: 900;
+        color: var(--main-100);
+    }
 }
 @media (max-width: 1024px) {
+
+    section .inner {
+        width: 954px;
+        margin: 0 auto;
+    }
 
     /*.header .headerWrap .logo a {*/
     /*    width: 120px;*/

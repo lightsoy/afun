@@ -648,7 +648,7 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
 .ourTeam .textArea .titWrap .subTit p {
     font-size: 14px;
     font-weight: 700;
-    white-space: nowrap;
+    white-space: pre-wrap;
 }
 
 .ourTeam .textArea .titWrap span {
@@ -1017,8 +1017,108 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 }
 
 /*반응형*/
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
 
+}
+@media (max-width: 1024px) {
+    section {
+        /*1024 - 70*/
+        min-width: 954px;
+    }
+
+    .visual .videoFrame {
+        min-width: 1024px;
+    }
+    .visual .contentArea {
+        max-width: 954px;
+    }
+
+    .ourWorks .textGroup {
+        height: 200px;
+    }
+    .ourWorks .textGroup .textArea .titWrap h2 {
+        font-size: 32px;
+        line-height: 24px;
+    }
+
+    .ourWorks .textGroup .textArea .textWrap,
+    .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap {
+        top: 44%;
+    }
+
+    .ourWorks .textGroup .textArea .textWrap .cate,
+    .ourWorks .textGroup .textArea .textWrap .date,
+    .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .cate,
+    .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .date {
+        display: none;
+    }
+
+    .ourWorks .textGroup .textArea .textWrap h3,
+    .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap h3 {
+        width: 320px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 700;
+        /*margin: 8px 0;*/
+        margin-top: 8px;
+    }
+    .ourWorks .slideArea {
+        width:567px;
+    }
+    .wSlideWrap :is(.prevArrow, .nextArrow) {
+        width: 16px;
+        height: 16px;
+        padding: 8px;
+    }
+    .wSlideWrap .wSlideImgWrap .wSlider .slick-slide {
+        width: 360px;
+        height: 200px;
+    }
+    .wSlideWrap .wSlideImgWrap .wSlider .slick-slide img {
+        height: 200px;
+    }
+
+    .business .textArea .titWrap h2 {
+        font-size: 32px;
+        line-height: 24px;
+    }
+    .business .textArea .textWrap {
+        margin-left: 16px;
+    }
+    .ourTeam {
+        padding : 172px 0 300px;
+    }
+    .ourTeam .textArea,
+    .ourTeam .accordionArea {
+        width: 426px;
+    }
+    .ourTeam .accordionArea {
+        margin-left: 102px;
+    }
+    .apply .bannerArea {
+        height: 216px;
+    }
+    .apply .bannerArea strong {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .apply .bannerArea .applyBtn {
+        margin-top: 24px;
+    }
+
+    .visual,
+    .ourWorks,
+    .business,
+    .ourHistory,
+    .partners {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {}
