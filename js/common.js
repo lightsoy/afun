@@ -24,7 +24,7 @@ $(window).on("scroll", function() {
 });
 
 //followCursor
-mouseMoveEvent()
+mouseMoveEvent();
 function mouseMoveEvent() {
     const $cursor = $(".followCursor");
     const mousePos = {

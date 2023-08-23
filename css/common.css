@@ -202,11 +202,11 @@ body.light-mode .header.on .headerWrap .logo a {
     left: 0;
     top: 0;
     transform: translate(-50%, -50%);
-    width: 23px;
-    height: 23px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background: #fff;
-    transition: 120ms;
+    transition: 80ms;
     mix-blend-mode: difference;
     pointer-events: none;
     z-index: 9999;
@@ -395,7 +395,9 @@ body.light-mode section .subTit p {
     /*display: none;*/
 }
 
-.footer .footerWrap {}
+.footer .footerWrap {
+    margin: 0 70px;
+}
 
 .footer .footerWrap .topArea {
     display: flex;
@@ -467,7 +469,8 @@ body.light-mode .footer .footerWrap .topArea .logo a {
 
 /*반응형*/
 @media (max-width: 1440px) {
-    .header .headerWrap {
+    .header .headerWrap,
+    .footer .footerWrap {
         margin: 0 20px;
     }
 
@@ -500,7 +503,7 @@ body.light-mode .footer .footerWrap .topArea .logo a {
     section .titWrap {}
     section .titWrap h2 {
         font-size: 32px;
-        line-height: 24px;
+        line-height: 40px;
         font-weight: 900;
         color: var(--main-100);
     }

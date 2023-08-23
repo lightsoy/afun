@@ -443,10 +443,11 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
 .business .textArea {
     display: flex;
     justify-content: center;
+    align-items: center;
     /*background: dodgerblue;*/
 }
 .business .textArea .titWrap {
-    vertical-align: center;
+    /*vertical-align: center;*/
 }
 .business .textArea .titWrap h2 {
     font-size: 48px;
@@ -1040,7 +1041,7 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     }
     .ourWorks .textGroup .textArea .titWrap h2 {
         font-size: 32px;
-        line-height: 24px;
+        line-height: 40px;
     }
 
     .ourWorks .textGroup .textArea .textWrap,
@@ -1096,7 +1097,7 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 
     .business .textArea .titWrap h2 {
         font-size: 32px;
-        line-height: 24px;
+        line-height: 40px;
     }
     .business .textArea .textWrap {
         margin-left: 16px;
@@ -1134,7 +1135,8 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 
 @media (max-width: 768px) {
     .visual .videoFrame {
-        min-width: 768px;
+        min-width: 100%;
+        /*min-width: 768px;*/
     }
     .visual .contentArea {
         max-width: 728px;
@@ -1207,7 +1209,7 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     }
     /*.business .textArea .titWrap h2 {*/
     /*    font-size: 32px;*/
-    /*    line-height: 24px;*/
+    /*    line-height: 40px;*/
     /*}*/
     /*.business .textArea .textWrap {*/
     /*    margin-left: 16px;*/
