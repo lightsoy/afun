@@ -196,6 +196,21 @@ body.light-mode .header.on .headerWrap .logo a {
     width: 100%;
     object-fit: cover;
 }
+/*Follow Cursor*/
+.followCursor{
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #fff;
+    transition: 120ms;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+}
 
 /*sub page 공통*/
 .breadCrumbs {

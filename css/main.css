@@ -445,7 +445,9 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
     justify-content: center;
     /*background: dodgerblue;*/
 }
-.business .textArea .titWrap {}
+.business .textArea .titWrap {
+    vertical-align: center;
+}
 .business .textArea .titWrap h2 {
     font-size: 48px;
     line-height: 56px;
@@ -460,7 +462,9 @@ body.light-mode .business .textArea .titWrap h2 {
 .business .textArea .textWrap {
     margin-left: 48px;
 }
-.business .textArea .textWrap p {}
+.business .textArea .textWrap p {
+    white-space: pre-wrap;
+}
 
 .business .contentArea {
     display: flex;
@@ -635,7 +639,7 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
     height: 332px;
 }
 .ourTeam .textArea {
-    width: 680px;
+    width: 700px;
 
     /*border: 2px solid red;*/
     /*box-sizing: border-box;*/
@@ -1087,7 +1091,7 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         height: 200px;
     }
     .ourWorks .wDotsWrap {
-        width: 360px;
+        /*width: 360px;*/
     }
 
     .business .textArea .titWrap h2 {
@@ -1136,9 +1140,9 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         max-width: 728px;
     }
 
-    /*.ourWorks .textGroup {*/
-    /*    height: 200px;*/
-    /*}*/
+    .ourWorks .textGroup {
+        height: 160px;
+    }
     /*.ourWorks .textGroup .textArea .titWrap h2 {*/
     /*    font-size: 32px;*/
     /*    line-height: 24px;*/
@@ -1232,4 +1236,4 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 
 }
 
-@media (max-width: 480px) {}
+/*@media (max-width: 480px) {}*/
