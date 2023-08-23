@@ -436,7 +436,8 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
 
 /*business*/
 .business {
-    padding: 100px 0 160px;
+    /*padding: 100px 0 160px;*/
+    padding-bottom: 160px;
     /*background: pink;*/
 }
 .business .textArea {
@@ -636,12 +637,14 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
 }
 .ourTeam .contentArea {
     display: flex;
+    justify-content: center;
     /*height: 332px;*/
     height: 24vw;
 }
 .ourTeam .textArea {
-    width: 700px;
-
+    /*width: 700px;*/
+    /*width: 44rem;*/
+    width: 36vw;
     /*border: 2px solid red;*/
     /*box-sizing: border-box;*/
 }
@@ -652,7 +655,6 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
     margin-top: 16px;
 }
 .ourTeam .textArea .titWrap .subTit p {
-    font-size: 14px;
     font-weight: 700;
     white-space: pre-wrap;
 }
@@ -692,8 +694,10 @@ body.light-mode .ourTeam .textArea .titWrap span:after {
 }
 
 .ourTeam .accordionArea {
-    width: 640px;
-    margin-left: 160px;
+    /*width: 640px;*/
+    width: 33vw;
+    /*margin-left: 160px;*/
+    margin-left: 6vw;
 }
 .ourTeam .accordionArea .accordion {}
 .ourTeam .accordionArea .accordion > li {
@@ -1107,14 +1111,15 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         padding : 172px 0 300px;
     }
     .ourTeam .textArea {
-        width: 295px;
+        /*width: 295px;*/
+        width: 48vw;
     }
     .ourTeam .textArea .titWrap span {
         font-size: 12px;
         line-height: 20px;
     }
-        .ourTeam .contentArea {
-        align-items: center;
+    .ourTeam .contentArea {
+        /*align-items: center;*/
     }
     .ourTeam .accordionArea {
         width: 426px;

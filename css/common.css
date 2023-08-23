@@ -499,14 +499,6 @@ body.light-mode .footer .footerWrap .topArea .logo a {
         margin: 0 auto;
     }
 
-    /*section title setting*/
-    section .titWrap {}
-    section .titWrap h2 {
-        font-size: 32px;
-        line-height: 40px;
-        font-weight: 900;
-        color: var(--main-100);
-    }
 }
 @media (max-width: 1024px) {
 
@@ -520,6 +512,18 @@ body.light-mode .footer .footerWrap .topArea .logo a {
         margin: 0 auto;
     }
 
+    /*section title setting*/
+    section .titWrap {}
+    section .titWrap h2 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 900;
+        color: var(--main-100);
+    }
+
+    section .subTit p {
+        font-size: 12px;
+    }
     /*.header .headerWrap .logo a {*/
     /*    width: 120px;*/
     /*}*/
