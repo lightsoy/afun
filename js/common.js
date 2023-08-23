@@ -23,6 +23,27 @@ $(window).on("scroll", function() {
 
 });
 
+//followCursor
+mouseMoveEvent()
+function mouseMoveEvent() {
+    const $cursor = $(".followCursor");
+    const mousePos = {
+        x: 0,
+        y: 0,
+    }
+
+    $win.on("mousemove", function (e){
+        mousePos.x = e.clientX;
+        mousePos.y = e.clientY;
+
+        $cursor.css({
+           left: mousePos.x,
+           top: mousePos.y,
+        });
+    });
+
+}
+
 $(window).on("resize", function() {
     $winW = $win.innerWidth();
     $winH = $win.innerHeight();
@@ -103,7 +124,6 @@ function scrollHeaderEvent() {
         $bread.removeClass("on");
     }
 }
-
 
 // section text  scroll ani
 scrollEvent();
