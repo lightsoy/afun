@@ -395,7 +395,6 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
     /*background: orange;*/
     bottom: 0;
     margin-left: 422px;
-    font-size: 20px;
     padding: 14px 0;
 }
 
@@ -637,7 +636,8 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
 }
 .ourTeam .contentArea {
     display: flex;
-    height: 332px;
+    /*height: 332px;*/
+    height: 24vw;
 }
 .ourTeam .textArea {
     width: 700px;
@@ -664,6 +664,7 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
     border-bottom: 2px solid var(--main-100);
     font-size: 14px;
     line-height: 16px;
+    font-weight: 700;
 
 }
 
@@ -1092,7 +1093,7 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         height: 200px;
     }
     .ourWorks .wDotsWrap {
-        /*width: 360px;*/
+        width: 360px;
     }
 
     .business .textArea .titWrap h2 {
@@ -1106,12 +1107,27 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         padding : 172px 0 300px;
     }
     .ourTeam .textArea {
-
         width: 295px;
+    }
+    .ourTeam .textArea .titWrap span {
+        font-size: 12px;
+        line-height: 20px;
+    }
+        .ourTeam .contentArea {
+        align-items: center;
     }
     .ourTeam .accordionArea {
         width: 426px;
         margin-left: 67px;
+    }
+    .ourTeam .accordionArea .accordion li > .team {
+        padding: 24px 20px 24px 20px;
+    }
+
+    .ourTeam .accordionArea .accordion li .team h3 {
+        font-size: 24px;
+        line-height: 32px;
+
     }
     .apply .bannerArea {
         height: 216px;
