@@ -472,7 +472,7 @@ body.light-mode .business .textArea .titWrap h2 {
     margin-left: 48px;
 }
 .business .textArea .textWrap p {
-    white-space: pre-wrap;
+    /*white-space: pre-wrap;*/
 }
 
 .business .contentArea {
@@ -668,7 +668,7 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
 }
 .ourTeam .textArea .titWrap .subTit p {
     font-weight: 700;
-    white-space: pre-wrap;
+    /*white-space: pre-wrap;*/
 }
 
 .ourTeam .textArea .titWrap span {

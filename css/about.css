@@ -15,10 +15,14 @@
     /*background: url("../images/sub_about/about_info_bg.png") no-repeat left bottom /100% 100%;*/
     background: url("../images/sub_about/about_info_bg.png") no-repeat center /cover;
 }
-.afunInfo .imgWrap .textArea {}
-.afunInfo .imgWrap .textArea .titWrap {
+.afunInfo .imgWrap .textArea {
+    max-width: 1024px;
+    margin: 0 auto;
+    background: red;
     text-align: center;
-    white-space: pre-wrap;
+}
+.afunInfo .imgWrap .textArea .titWrap {
+    /*white-space: pre-wrap;*/
 }
 
 .afunInfo .imgWrap .textArea .titWrap h2 {
@@ -36,6 +40,7 @@ body.light-mode .afunInfo .imgWrap .textArea .titWrap h2 {
     transition: 0.5s;
 }
 .afunInfo .imgWrap .textArea .titWrap .subTit {
+    margin-top: 32px;
     transform: translateY(10px);
     opacity: 0;
 }
@@ -352,7 +357,7 @@ body.light-mode .ciGuide .contentArea .imgArea .verticalLogo {
     font-weight: 900;
 }
 .concept .textArea .titWrap .textWrap p {
-    white-space: pre-wrap;
+    /*white-space: pre-wrap;*/
 
     font-size: 14px;
     line-height: 20px;

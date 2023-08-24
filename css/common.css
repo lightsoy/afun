@@ -41,6 +41,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     color: var(--main-100);
+    word-break: keep-all;
 }
 body.light-mode {
     background: var(--main-100);
