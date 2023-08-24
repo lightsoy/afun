@@ -1,0 +1,49 @@
+@import "common.css";
+
+.header .headerWrap nav .gnb li:nth-child(3) {
+    color: var(--sub2-300);
+}
+
+.worksInfo {
+    padding-top: 128px;
+}
+.worksInfo .imgWrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 846px;
+    background: url("../images/sub_works/img_sub_works_info_bg.png") no-repeat center /cover;
+}
+.worksInfo .imgWrap .textArea {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body.light-mode .worksInfo .imgWrap .textArea  {
+    color: var(--main-100);
+}
+
+.worksInfo .imgWrap .textArea .subTit {
+    margin-top: 32px;
+    transform: translateY(10px);
+    /*opacity: 0;*/
+    opacity: 1;
+}
+.worksInfo .imgWrap .textArea .ani.on .subTit {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.worksInfo .imgWrap .textArea .subTit p{
+    color: var(--main-100);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.works {}
+.works .alignArea {}
+.works .worksArea {}
+.works .pageArea {}
