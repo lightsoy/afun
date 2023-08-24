@@ -174,7 +174,8 @@ body.light-mode .visual .contentArea .scrollArea span {
 .ourWorks .textGroup {
     position: relative;
     width: 100%;
-    height: 400px;
+    /*height: 400px;*/
+    height: 21vw;
     /*background: red;*/
 }
 
@@ -324,11 +325,13 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
 .ourWorks .slideArea {
     position: absolute;
     left: 422px;
+    /*left: 22vw;*/
     top: 0;
     /*width: calc(1920px - 420px - 260px);*/
     /*width: 1258px;*/
     width: 87%;
-    height: 400px;
+    /*height: 400px;*/
+    height: 21vw;
 }
 
 .wSlideWrap {
@@ -364,7 +367,8 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
     right: 0;
 
     width: 108px;
-    height: 400px;
+    /*height: 400px;*/
+    height: 21vw;
 
     z-index: 10;
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 150%);
@@ -376,14 +380,17 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
 .wSlideWrap .wSlideImgWrap .wSlider .slick-list {}
 .wSlideWrap .wSlideImgWrap .wSlider .slick-slide {
     margin: 0 18px;
-    width: 720px;
-    height: 400px;
+    /*width: 720px;*/
+    width: 37.5vw;
+    /*height: 400px;*/
+    height: 21vw;
     /*border: 2px solid white;*/
 }
 .wSlideWrap .wSlideImgWrap .wSlider .slick-slide img {
     width: 100%;
-    height: 400px;
-    /*object-fit: cover;*/
+    height: 100%;
+    /*height: 400px;*/
+    object-fit: cover;
 
 }
 
@@ -391,7 +398,8 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
 
 /*wDots*/
 .ourWorks .wDotsWrap {
-    width: 720px;
+    /*width: 720px;*/
+    width: 37.5vw;
     /*background: orange;*/
     bottom: 0;
     margin-left: 422px;
@@ -480,6 +488,7 @@ body.light-mode .business .textArea .titWrap h2 {
 }
 .business .contentArea .box {
     width: 296px;
+    /*width: 15vw;*/
     position: relative;
 }
 .business .contentArea .box:nth-child(2){
@@ -496,6 +505,7 @@ body.light-mode .business .textArea .titWrap h2 {
 .business .contentArea .box .boxImg {
     position: relative;
     height: 296px;
+    /*height: 15vw;*/
     border-radius: 16px;
     overflow: hidden;
 }
@@ -553,7 +563,8 @@ body.light-mode .business .textArea .titWrap h2 {
 .ourHistory {
     padding: 48px 0 50px;
     position: relative;
-    background: url(../images/img_history_bg.png)no-repeat center / 100% 100%;
+    /*background: url(../images/img_history_bg.png)no-repeat center / 100% 100%;*/
+    background: url(../images/img_history_bg.png)no-repeat right top / cover;
     height: 556px;
     box-sizing: border-box;
     overflow: hidden;
@@ -632,7 +643,8 @@ body.light-mode .ourHistory .historyArea .hSlider .textWrap .years {
 /*ourTeam*/
 .ourTeam {
     /*padding: 310px 0 172px;*/
-    padding: 172px 0 348px;
+    /*padding: 172px 0 348px;*/
+    padding: 172px 0 182px;
     box-sizing: border-box;
 }
 .ourTeam .contentArea {
@@ -1116,6 +1128,15 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     }
     .business .textArea .textWrap {
         margin-left: 16px;
+    }
+    .business .contentArea .box {
+        width: 180px;
+    }
+    .business .contentArea .box:nth-child(2) {
+        margin: 96px 40px 0;
+    }
+    .business .contentArea .box .boxImg {
+        height: 180px;
     }
 
     /*1024 ourTeam*/
