@@ -44,6 +44,12 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 }
 
 .works {}
-.works .alignArea {}
-.works .worksArea {}
-.works .pageArea {}
+.works .alignArea {
+    background: dodgerblue;
+}
+.works .worksArea {
+    background: rebeccapurple;
+}
+.works .pageArea {
+    background: green;
+}
