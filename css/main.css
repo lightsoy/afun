@@ -939,6 +939,7 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     transition: 0.5s;
 }
 .business .ani.on .textWrap {
+    width: 53vw;
     transition-delay: 0.2s;
 }
 /*----*/
