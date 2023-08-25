@@ -34,16 +34,16 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 .ContactUs .locationArea {
     margin-top: 44px;
 }
-/*.ContactUs .locationArea .map {*/
-/*    width: 100%;*/
-/*    height: 800px;*/
-/*    background: red;*/
-/*}*/
-
-.ContactUs .locationArea .map iframe {
+.ContactUs .locationArea .map {
     width: 100%;
-    height: 56vh;
+    height: 800px;
+    background: red;
 }
+
+/*.ContactUs .locationArea .map iframe {*/
+/*    width: 100%;*/
+/*    height: 56vh;*/
+/*}*/
 
 .ContactUs textArea {
     display: flex;
