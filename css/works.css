@@ -198,15 +198,6 @@ body.light-mode .worksInfo .imgWrap .textArea  {
     /*background: url("../images/sub_works/img_site_map_bg.png")no-repeat center / cover;*/
 }
 
-.siteMap .siteLinkWrap .site {
-    position: relative;
-    /*width: 640px;*/
-    width: 33.33%;
-    /*height: 360px;*/
-    height: 18.8vw;
-    cursor: pointer;
-}
-
 .siteMap .siteLink-1 {
     background: url("../images/sub_works/img_sub_works_sns_link_bg_1.png") no-repeat center / cover;
 }
@@ -217,29 +208,42 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .siteMap .siteLink-3 {
     background: url("../images/sub_works/img_sub_works_sns_link_bg_3.png") no-repeat center/ cover;
 }
+.siteMap .siteLinkWrap .site {
+    position: relative;
+    /*width: 640px;*/
+    width: 33.33%;
+    /*height: 360px;*/
+    height: 18.8vw;
+    cursor: pointer;
 
-.siteMap .site .snsIcon {
+    transition: 0.5s;
+}
+
+.siteMap .siteLinkWrap .site:hover {
+    background-size: 120%;
+}
+
+.siteMap .siteLinkWrap .site .snsIcon {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 64px;
     height: 64px;
+
     opacity: 0.5;
     transition: 0.5s;
 }
-
-.siteMap .site .snsIcon.on {
+.siteMap .siteLinkWrap .site:hover .snsIcon {
     opacity: 1;
 }
-
-.siteMap .siteLink-1 .snsIcon {
+.siteMap .siteLinkWrap .siteLink-1 .snsIcon {
     background: url("../images/sub_works/ico-facebook.png") no-repeat center / cover;
 }
-.siteMap .siteLink-2 .snsIcon {
+.siteMap .siteLinkWrap .siteLink-2 .snsIcon {
     background: url("../images/sub_works/ico-youtube.png") no-repeat center / cover;
 }
-.siteMap .siteLink-3 .snsIcon {
+.siteMap .siteLinkWrap .siteLink-3 .snsIcon {
     background: url("../images/sub_works/ico-vimeo.png") no-repeat center / cover;
 }
 
