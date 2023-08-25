@@ -47,7 +47,7 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .works .alignArea {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: dodgerblue;
 }
 .works .alignArea .cate {
@@ -59,15 +59,66 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .works .alignArea .align a {}
 .works .alignArea .align a span {}
 .works .alignArea .align a span::after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    /*background: url("");*/
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 2px 8px;
+    vertical-align: middle;
     background: greenyellow;
 }
 .works .worksArea {
     background: rebeccapurple;
 }
+
+.works .worksArea .worksWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.works .worksArea .worksWrap .worksItem {}
+.works .worksArea .worksWrap .worksItem:nth-child(even) {
+    margin-left: 56px;
+}
+.works .worksArea .worksWrap .worksItem a {}
+.works .worksArea .worksWrap .worksItem a .imgWrap {
+    width: 692px;
+    height: 390px;
+    /*background: yellow;*/
+    background: url("../images/sub_works/img_sub_works_list_img_1.png") no-repeat center / cover;
+}
+
+.works .worksArea .worksWrap .worksItem a .textWrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+.works .worksArea .worksWrap .worksItem a .textWrap strong {
+    /*display: -webkit-box;*/
+    /*width: 480px;*/
+    /*-webkit-line-clamp: 1;*/
+    /*-webkit-box-orient: vertical;*/
+    /*text-overflow: ellipsis;*/
+    /*overflow: hidden;*/
+
+
+    width: 480px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: normal;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+}
+.works .worksArea .worksWrap .worksItem a .textWrap span {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--sub3-100);
+}
+
 .works .pageArea {
     background: green;
 }
