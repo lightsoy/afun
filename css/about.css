@@ -239,11 +239,11 @@ body.light-mode .ciGuide .contentArea .textArea .textWrap p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*width: 384px;*/
     width: 20vw;
     height: 56px;
-    /*height: 3vw;*/
     min-width: 280px;
+    max-width: 384px;
+    /*height: 3vw;*/
     /*width: 350px;*/
     /*height: 49px;*/
     background: url("../images/button/img_button_sub_about_guide.svg") no-repeat center / contain;

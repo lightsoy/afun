@@ -47,7 +47,9 @@ body.light-mode {
     background: var(--main-100);
     color: var(--main-800);
 }
-
+select {
+    border-radius: 0;
+}
 button {
     font-family: "Roboto semibold", sans-serif;
     font-weight: 900;
