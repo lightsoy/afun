@@ -199,14 +199,14 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 }
 
 .siteMap .siteLink-1 {
-    background: url("../images/sub_works/img_sub_works_sns_link_bg_1.png") no-repeat center / cover;
+    background: url("../images/sub_works/img_sub_works_sns_link_bg_1.png") no-repeat center / 100%;
 }
 
 .siteMap .siteLink-2 {
-    background: url("../images/sub_works/img_sub_works_sns_link_bg_2.png") no-repeat center/ cover;
+    background: url("../images/sub_works/img_sub_works_sns_link_bg_2.png") no-repeat center/ 100%;
 }
 .siteMap .siteLink-3 {
-    background: url("../images/sub_works/img_sub_works_sns_link_bg_3.png") no-repeat center/ cover;
+    background: url("../images/sub_works/img_sub_works_sns_link_bg_3.png") no-repeat center/ 100%;
 }
 .siteMap .siteLinkWrap .site {
     position: relative;
