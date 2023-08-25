@@ -52,6 +52,10 @@ button {
     font-family: "Roboto semibold", sans-serif;
     font-weight: 900;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /*header*/
 .header {
@@ -147,8 +151,8 @@ body.light-mode .header.on .headerWrap .logo a {
     box-sizing: border-box;
     padding-top: 28px;
 
-    text-decoration: none;
-    color: inherit;
+    /*text-decoration: none;*/
+    /*color: inherit;*/
 }
 
 .header .headerWrap nav .gnb li > a:hover {

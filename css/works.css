@@ -45,7 +45,25 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 
 .works {}
 .works .alignArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background: dodgerblue;
+}
+.works .alignArea .cate {
+    border: 2px solid red;
+}
+.works .alignArea .cate #worksCate {}
+
+.works .alignArea .align {}
+.works .alignArea .align a {}
+.works .alignArea .align a span {}
+.works .alignArea .align a span::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    /*background: url("");*/
+    background: greenyellow;
 }
 .works .worksArea {
     background: rebeccapurple;
