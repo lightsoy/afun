@@ -21,7 +21,7 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 }
 
 .contactUs {
-    padding-top: 128px;
+    padding: 128px 0 36px;
     border-bottom: 2px solid var(--main-100);
     /*background: dodgerblue;*/
 }
@@ -45,14 +45,27 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     height: 56vh;
 }
 
-.contactUs textArea {
+.contactUs .textArea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 44px;
 }
-.contactUs textArea .adressWrap {
+.contactUs .textArea .adressWrap {
+    width: 30vw;
 }
-.contactUs textArea .numberWrap {
+
+.contactUs .textArea .subTit {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 900;
+}
+.contactUs .textArea .adressWrap p {
+    white-space: pre-wrap;
+}
+
+.contactUs .textArea .numberWrap {
+    text-align: right;
 }
 
 

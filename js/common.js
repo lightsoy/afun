@@ -61,9 +61,9 @@ $(window).on("resize", function() {
 
 
 
-const $modeBtn = $header.find(".modeBtn");
 
 // light-mode toggle
+const $modeBtn = $header.find(".modeBtn");
 $modeBtn.on("click", function () {
     $modeBtn.toggleClass("light-mode");
 
@@ -73,11 +73,6 @@ $modeBtn.on("click", function () {
 
         $(this).find("img").attr("src", imgSrc);
         $body.addClass("light-mode");
-
-        // // a태그 새로고침 방지
-        // $('a').click(function(e) {
-        //     e.preventDefault();
-        // });
 
     } else {
         const imgSrc = $(this).find("img").attr("src").replace("_light.png", ".png");
