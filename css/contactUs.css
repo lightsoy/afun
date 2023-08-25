@@ -46,10 +46,14 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 }
 
 .ContactUs textArea {
-    display: flow-root;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.ContactUs textArea .adressWrap {}
-.ContactUs textArea .numberWrap {}
+.contactUs textArea .adressWrap {
+}
+.contactUs textArea .numberWrap {
+}
 
 
 
