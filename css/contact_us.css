@@ -1,9 +1,9 @@
 @import "common.css";
-
+/*header*/
 .header .headerWrap nav .gnb > li:nth-child(5) .depth1 {
     color: var(--sub2-300);
 }
-
+/*breadCrumbs*/
 .breadCrumbs .location .loca-2:after {
     content: "";
     display: inline-block;
@@ -12,28 +12,18 @@
     height: 16px;
     background: url("../images/dark_mode/ico_right.png") no-repeat center/ 100% 100%;
     margin: -2px 2px 0;
-
-    /*border: 1px solid red;*/
-    /*box-sizing: border-box;*/
 }
 body.light-mode .breadCrumbs .location .loca-2:after {
     background: url("../images/light_mode/ico_right.png") no-repeat center/ 100% 100%;
 }
 
-.contactUs {
-    padding: 128px 0 36px;
-    border-bottom: 2px solid var(--main-100);
-    /*background: dodgerblue;*/
-}
+/*contactUs*/
+.contactUs {padding: 128px 0 36px;}
 
-.contactUs .titWrap {
-    margin-top: 52px;
-    /*background: blueviolet;*/
-}
+.contactUs .titWrap {margin-top: 52px;}
 .contactUs .titWrap h2 {}
-.contactUs .locationArea {
-    margin-top: 44px;
-}
+.contactUs .locationArea {margin-top: 44px;}
+
 /*.contactUs .locationArea .map {*/
 /*    width: 100%;*/
 /*    height: 800px;*/
@@ -51,9 +41,7 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     align-items: center;
     margin-top: 44px;
 }
-.contactUs .textArea .adressWrap {
-    width: 30vw;
-}
+.contactUs .textArea .adressWrap {width: 50vw;}
 
 .contactUs .textArea .subTit {
     font-size: 22px;
@@ -62,12 +50,77 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 }
 .contactUs .textArea .adressWrap p {
     white-space: pre-wrap;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .contactUs .textArea .numberWrap {
     text-align: right;
 }
+.contactUs .textArea .numberWrap h3 {}
+.contactUs .textArea .numberWrap span {
+    font-size: 14px;
+    line-height: 20px;
+}
+.contactUs .textArea .numberWrap .numberWrapTel {
+    display: block;
+    margin-top: 18px;
+}
 
+/*inq*/
+.inq {}
+.inq .agreeArea {border-top: 2px solid var(--main-100);}
+.inq .agreeArea .titWrap {margin-top: 70px;}
+.inq .agreeArea .titWrap h2 {}
+
+.inq .agreeArea .allCheck {
+    margin-top: 80px;
+    height: 64px;
+    background: var(--sub3-800);
+    text-align: center;
+    line-height: 64px;
+}
+.inq .agreeArea .allCheck label {font-weight: 900;}
+.inq .agreeArea .allCheck input {}
+
+.inq .agreeArea .agree {
+    width: 100%;
+    margin: 80px auto 0;
+}
+.inq .agreeArea .agree h3 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.inq .agreeArea .agree .desc {
+    margin-top: 16px;
+    /*height: 264px;*/
+    height: 32vh;
+    overflow: auto;
+    border: 1px solid var(--main-100);
+}
+.inq .agreeArea .agree .desc p {
+    font-size: 12px;
+    line-height: 22px;
+    white-space: pre-wrap;
+    margin: 24px;
+}
+.inq .agreeArea .agree .checkWrap {
+    margin-top: 16px;
+    text-align: right;
+}
+.inq .agreeArea .agree .checkWrap label {
+    font-size: 14px;
+    line-height: 22px;
+}
+.inq .agreeArea .agree .checkWrap input {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 6px;
+    vertical-align: middle;
+}
 
 
 @media (max-width: 1024px){

@@ -26,6 +26,7 @@
     --sub3-500: #2c99b1;
     --sub3-600: #08748c;
     --sub3-700: #195974;
+    --sub3-800: #0a445b;
 }
 ::selection {
     background: var(--sub2-600);
@@ -65,6 +66,26 @@ button {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+select {
+
+    background: var(--main-800);
+    border: 2px solid var(--main-100);
+    border-radius: 0;
+    color: var(--main-100);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+}
+body.light-mode select {
+    background: var(--main-100);
+    border: 2px solid var(--main-800);
+    color: var(--main-800);
+}
+select option {
+    padding: 0;
+    margin: 4px 8px 0;
 }
 
 /*header*/

@@ -59,26 +59,8 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .works .alignArea .cate #worksCate {
     width: 180px;
     height: 32px;
-    background: var(--main-800);
-    border: 2px solid var(--main-100);
-    border-radius: 0;
-    color: var(--main-100);
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 700;
 }
 
-body.light-mode .works .alignArea .cate #worksCate {
-
-    background: var(--main-100);
-    border: 2px solid var(--main-800);
-    color: var(--main-800);
-}
-
-.works .alignArea .cate #worksCate option {
-    padding: 0;
-    margin: 4px 8px 0;
-}
 
 .works .alignArea .align {}
 .works .alignArea .align a {
