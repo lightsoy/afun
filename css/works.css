@@ -97,7 +97,7 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .works .worksArea .worksWrap .worksItem {
     /*width: 692px;*/
     width: 49%;
-    margin-top: 40px;
+    margin-top: 48px;
 }
 .works .worksArea .worksWrap .worksItem:nth-child(1),
 .works .worksArea .worksWrap .worksItem:nth-child(2) {
@@ -123,7 +123,7 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .works .worksArea .worksWrap .worksItem a .textWrap {
     display: flex;
     justify-content: space-between;
-    margin: 8px;
+    margin: 16px 8px 0;
 }
 .works .worksArea .worksWrap .worksItem a .textWrap strong {
     /*width: 480px;*/
