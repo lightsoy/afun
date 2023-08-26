@@ -4,8 +4,6 @@
     color: var(--sub2-300);
 }
 
-
-
 .breadCrumbs .location .loca-2:after {
     content: "";
     display: inline-block;
