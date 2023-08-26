@@ -66,27 +66,41 @@ body.light-mode .worksInfo .imgWrap .textArea  {
     font-size: 14px;
     line-height: 22px;
     font-weight: 700;
-
 }
+
+body.light-mode .works .alignArea .cate #worksCate {
+
+    background: var(--main-100);
+    border: 2px solid var(--main-800);
+    color: var(--main-800);
+}
+
 .works .alignArea .cate #worksCate option {
     padding: 0;
     margin: 4px 8px 0;
 }
 
 .works .alignArea .align {}
-.works .alignArea .align a {}
+.works .alignArea .align a {
+    vertical-align: middle;
+}
 .works .alignArea .align a span {}
 .works .alignArea .align a span::after {
     content: "";
     display: inline-block;
     width: 16px;
     height: 16px;
-    margin: 0 0 2px 8px;
+    margin-left: 4px;
     vertical-align: middle;
-    background: greenyellow;
+    /*background: greenyellow;*/
+    background: url("../images/dark_mode/ico_arrow_down.png") no-repeat center / cover;
 }
+body.light-mode .works .alignArea .align a span::after {
+    background: url("../images/light_mode/ico_arrow_down.png") no-repeat center / cover;
+}
+
 .works .worksArea {
-    margin-top: 64px;
+    margin-top: 48px;
 }
 
 .works .worksArea .worksWrap {
@@ -140,9 +154,15 @@ body.light-mode .worksInfo .imgWrap .textArea  {
     font-weight: 900;
 }
 .works .worksArea .worksWrap .worksItem a .textWrap span {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
     color: var(--sub3-100);
+    text-align: right;
+}
+
+body.light-mode .works .worksArea .worksWrap .worksItem a .textWrap span {
+    color: var(--sub3-500);
 }
 
 .works .pageArea {
@@ -151,7 +171,7 @@ body.light-mode .worksInfo .imgWrap .textArea  {
     text-align: center;
     align-items: center;
     border-top: 2px solid var(--main-100);
-    margin-top: 40px;
+    margin-top: 48px;
 }
 
 .works .pageArea :is(.prevArrow, .nextArrow) {
@@ -181,11 +201,13 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .works .pageArea .page li {
     width: 32px;
     height: 32px;
-    line-height: 32px;
     margin: 16px 0 0 16px;
 }
 
-.works .pageArea .page li a {}
+.works .pageArea .page li a {
+    font-weight: 900;
+    line-height: 32px;
+}
 
 /*siteMap*/
 .siteMap {
