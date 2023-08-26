@@ -47,6 +47,14 @@ body.light-mode {
     background: var(--main-100);
     color: var(--main-800);
 }
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 select {
     border-radius: 0;
 }
