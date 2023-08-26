@@ -1,8 +1,10 @@
 @import "common.css";
 
-.header .headerWrap nav .gnb li:nth-child(5) {
+.header .headerWrap nav .gnb > li:nth-child(5) .depth1 {
     color: var(--sub2-300);
 }
+
+
 
 .breadCrumbs .location .loca-2:after {
     content: "";

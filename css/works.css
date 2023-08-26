@@ -1,6 +1,6 @@
 @import "common.css";
 
-.header .headerWrap nav .gnb li:nth-child(3) {
+.header .headerWrap nav .gnb > li:nth-child(3) {
     color: var(--sub2-300);
 }
 

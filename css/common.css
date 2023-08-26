@@ -114,14 +114,13 @@ body.light-mode .header.on {
 
     background: url("../images/dark_mode/logo.png")no-repeat center /100%;
 }
-
 body.light-mode .header .headerWrap .logo a {
     background: url("../images/light_mode/logo.png")no-repeat center /100%;
 }
 
-body.light-mode .header.on .headerWrap .logo a {
-    background: url("../images/light_mode/logo.png")no-repeat center /100%;
-}
+/*body.light-mode .header.on .headerWrap .logo a {*/
+/*    background: url("../images/light_mode/logo.png")no-repeat center /100%;*/
+/*}*/
 
 .header .headerWrap nav {
     display: inline-block;
@@ -143,6 +142,10 @@ body.light-mode .header.on .headerWrap .logo a {
 .header .headerWrap nav .gnb > li~li {
     /*margin-left: 80px;*/
 }
+.header .headerWrap nav .gnb li:nth-child(5) {
+    position: relative;
+}
+
 .header .headerWrap nav .gnb li > a {
     display: block;
     height: 80px;
@@ -163,26 +166,58 @@ body.light-mode .header.on .headerWrap .logo a {
     color: var(--sub2-300);
 }
 
-.header .headerWrap nav .gnb li:nth-child(1) > a {
+.header .headerWrap nav .gnb > li:nth-child(1) > a {
     /*width: 84px;*/
     width: 164px;
 }
-.header .headerWrap nav .gnb li:nth-child(2) > a {
+.header .headerWrap nav .gnb > li:nth-child(2) > a {
     /*width: 106px;*/
     width: 186px;
 }
-.header .headerWrap nav .gnb li:nth-child(3) > a {
+.header .headerWrap nav .gnb > li:nth-child(3) > a {
     /*width: 86px;*/
     width: 166px;
 }
-.header .headerWrap nav .gnb li:nth-child(4) > a {
+.header .headerWrap nav .gnb > li:nth-child(4) > a {
     /*width: 80px;*/
     width: 160px;
 }
-.header .headerWrap nav .gnb li:nth-child(5) > a {
+.header .headerWrap nav .gnb > li:nth-child(5) .depth1 {
     /*width: 97px;*/
     width: 177px;
 }
+.header .headerWrap nav .gnb > li:nth-child(5) .depth2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+body.light-mode .header .headerWrap nav .gnb > li:nth-child(5) .depth2 {
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--main-800);
+}
+
+.header .headerWrap nav .gnb > li:nth-child(5):hover .depth2 {
+    display: block;
+}
+
+.header .headerWrap nav .gnb > li:nth-child(5) .depth2 li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .headerWrap nav .gnb > li:nth-child(5) .depth2 li a {
+    font-size: 14px;
+    line-height: 56px;
+    font-weight: 700;
+    height: 56px;
+    padding: 0;
+}
+
 
 .header .headerWrap .headerIcons {
     position: absolute;
