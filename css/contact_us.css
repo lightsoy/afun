@@ -76,13 +76,18 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 
 .inq .agreeArea .allCheck {
     margin-top: 80px;
-    height: 64px;
-    background: var(--sub3-800);
     text-align: center;
     line-height: 64px;
 }
-.inq .agreeArea .allCheck label {font-weight: 900;}
-.inq .agreeArea .allCheck input {}
+.inq .agreeArea .allCheck label {
+    font-weight: 900;
+
+    width: 100%;
+    display: inline-block;
+    background: var(--sub3-800);
+    margin: 0 auto;
+}
+.inq .agreeArea .allCheck label input {}
 
 .inq .agreeArea .agree {
     width: 100%;
@@ -124,8 +129,8 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 
 
 @media (max-width: 1024px){
-    /*.map iframe{*/
-    /*    width: 300px;*/
-    /*    height:300px;*/
-    /*}*/
+    .contactUs .locationArea .map iframe {
+        /*width: 300px;*/
+        height: 28vh;
+    }
 }

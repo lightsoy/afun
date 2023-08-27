@@ -136,6 +136,7 @@ body.light-mode .works .alignArea .align a span::after {
     font-weight: 900;
 }
 .works .worksArea .worksWrap .worksItem a .textWrap span {
+    /*width: 20%;*/
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;

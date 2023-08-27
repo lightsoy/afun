@@ -338,11 +338,13 @@ body.light-mode .breadCrumbs .location .loca-1:after {
 
 /*section 공통 적용 */
 section {
-    width: 100%;
-    min-width: 1440px;
+    /*width: 100%;*/
+    width: 100vw;
+    /*min-width: 1440px;*/
 }
 section .inner {
-    width: 1440px;
+    /*width: 1440px;*/
+    width: 75vw;
     margin: 0 auto;
 }
 
@@ -566,8 +568,6 @@ body.light-mode .footer .footerWrap .topArea .logo a {
 
 
     section .inner {
-        width: 1024px;
-        margin: 0 auto;
     }
 
 }
@@ -575,12 +575,11 @@ body.light-mode .footer .footerWrap .topArea .logo a {
 
     section {
         /*1024 - 70*/
-        min-width: 784px;
+        /*min-width: 784px;*/
     }
 
     section .inner {
-        width: 784px;
-        margin: 0 auto;
+        /*width: 784px;*/
     }
 
     /*section title setting*/
@@ -595,6 +594,7 @@ body.light-mode .footer .footerWrap .topArea .logo a {
     section .subTit p {
         font-size: 12px;
     }
+
     /*.header .headerWrap .logo a {*/
     /*    width: 120px;*/
     /*}*/
@@ -627,21 +627,28 @@ body.light-mode .footer .footerWrap .topArea .logo a {
     .header .headerWrap .logo a {
         width: 100px;
     }
-    .header .headerWrap nav .gnb li:nth-child(1) > a {
-        width: 84px;
+
+    .header .headerWrap nav {
+        display: none;
     }
-    .header .headerWrap nav .gnb li:nth-child(2) > a {
-        width: 106px;
-    }
-    .header .headerWrap nav .gnb li:nth-child(3) > a {
-        width: 86px;
-    }
-    .header .headerWrap nav .gnb li:nth-child(4) > a {
-        width: 80px;
-    }
-    .header .headerWrap nav .gnb li:nth-child(5) > a {
-        width: 97px;
-    }
+    .header .headerWrap nav .gnb {
+        display: none;
+
+    /*.header .headerWrap nav .gnb li:nth-child(1) > a {*/
+    /*    width: 84px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(2) > a {*/
+    /*    width: 106px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(3) > a {*/
+    /*    width: 86px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(4) > a {*/
+    /*    width: 80px;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb li:nth-child(5) > a {*/
+    /*    width: 97px;*/
+    /*}*/
 
     .footer {
         padding: 40px 0;
@@ -649,11 +656,11 @@ body.light-mode .footer .footerWrap .topArea .logo a {
 
     section {
         /*768 - 40*/
-        min-width: 728px;
+        /*min-width: 728px;*/
     }
 
     section .inner {
-        width: 728px;
+        /*width: 728px;*/
         margin: 0 auto;
     }
 
@@ -669,12 +676,12 @@ body.light-mode .footer .footerWrap .topArea .logo a {
     }
 }
 
-/*@media (max-width: 480px) {*/
-/*    .header .headerWrap nav {*/
-/*        display: none; !important;*/
-/*    }*/
-/*    .header .headerWrap nav .gnb {*/
-/*        display: none; !important;*/
-/*    }*/
+@media (max-width: 480px) {
+    /*.header .headerWrap nav {*/
+    /*    display: none; !important;*/
+    /*}*/
+    /*.header .headerWrap nav .gnb {*/
+    /*    display: none; !important;*/
+    /*}*/
 
-/*}*/
+}
