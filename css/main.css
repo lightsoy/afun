@@ -80,7 +80,6 @@ body.light-mode .visual .contentArea .visualTitArea h2 {
 }
 .visual .contentArea .ctrlBtn button {
     padding: 0;
-    border: none;
     background: none;
     font-size: 0;
     /*background: dodgerblue;*/
@@ -156,9 +155,8 @@ body.light-mode .visual .contentArea .scrollArea span {
 
     width: 138px;
     height: 44px;
-    border: none;
     color: var(--main-100);
-    background: url("../images/button/img_button_visual.svg");
+    background: url("../images/button/img_button_visual.svg") no-repeat center;
 
     cursor: pointer;
 }
@@ -309,7 +307,6 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
     height: 56px;
     /*margin-top: 96px;*/
     color: var(--main-100);
-    border: none;
     cursor: pointer;
     font-size: 18px;
     line-height: 24px;
@@ -829,7 +826,6 @@ body.light-mode .apply .bannerArea strong {
     width: 240px;
     height: 56px;
     margin-top: 32px;
-    border: none;
     color: var(--main-100);
     font-size: 18px;
     line-height: 24px;

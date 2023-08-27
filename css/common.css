@@ -69,7 +69,11 @@ body.light-mode {
 select {
     border-radius: 0;
 }
+
+select:focus {outline: none;}
+
 button {
+    border: none;
     font-family: "Roboto semibold", sans-serif;
     font-weight: 900;
 }
@@ -78,8 +82,39 @@ a {
     color: inherit;
 }
 
-select {
+/* input outline setting */
+input {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
 
+    height: 32px;
+    width: 160px;
+
+    background: transparent;
+    box-sizing: border-box;
+    border: 2px solid var(--main-100);
+    color: var(--main-100);
+    padding: 4px;
+}
+body.light-mode input {
+    border: 2px solid var(--main-800);
+    color: var(--main-800);
+}
+input:focus {outline: none;}
+
+textarea {
+    background: transparent;
+    border: 2px solid var(--main-100);
+    color: var(--main-100);
+}
+body.light-mode textarea {
+    border: 2px solid var(--main-800);
+    color: var(--main-800);
+}
+textarea:focus {outline: none;}
+
+select {
     background: var(--main-800);
     border: 2px solid var(--main-100);
     border-radius: 0;

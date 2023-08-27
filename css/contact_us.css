@@ -17,6 +17,25 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     background: url("../images/light_mode/ico_right.png") no-repeat center/ 100% 100%;
 }
 
+/*scrollBar*/
+.inq .agreeArea .agree ::-webkit-scrollbar,
+.inq .inqInputArea .formWrap .inputText .inqTextWrap ::-webkit-scrollbar {
+    width: 16px;
+    height: 100%;
+}
+.inq .agreeArea .agree ::-webkit-scrollbar-thumb,
+.inq .inqInputArea .formWrap .inputText .inqTextWrap ::-webkit-scrollbar-thumb {
+    background: var(--sub2-700); /* 스크롤바 막대 색상 */
+}
+
+.inq .agreeArea .agree ::-webkit-scrollbar-corner,
+.inq .inqInputArea .formWrap .inputText .inqTextWrap ::-webkit-scrollbar-corner
+{
+    /*background: transparent;*/
+    /*border: none;*/
+    /*display: none;*/
+}
+
 /*contactUs*/
 .contactUs {padding: 128px 0 36px;}
 
@@ -69,7 +88,9 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 }
 
 /*inq*/
-.inq {}
+.inq {
+    padding-bottom: 32px;
+}
 .inq .agreeArea {border-top: 2px solid var(--main-100);}
 .inq .agreeArea .titWrap {margin-top: 70px;}
 .inq .agreeArea .titWrap h2 {}
@@ -87,7 +108,10 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     background: var(--sub3-800);
     margin: 0 auto;
 }
-.inq .agreeArea .allCheck label input {}
+.inq .agreeArea .allCheck label input {
+    width: auto;
+    height: auto;
+}
 
 .inq .agreeArea .agree {
     width: 100%;
@@ -97,14 +121,6 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     margin-top: 40px;
 }
 
-/*scrollBar*/
-.inq .agreeArea .agree ::-webkit-scrollbar {
-    width: 16px;
-    height: 100%;
-}
-.inq .agreeArea .agree ::-webkit-scrollbar-thumb {
-    background: var(--sub2-700); /* 스크롤바 막대 색상 */
-}
 .inq .agreeArea .agree h3 {
     font-size: 22px;
     line-height: 28px;
@@ -138,7 +154,89 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     margin-bottom: 6px;
     vertical-align: middle;
 }
+.inq .inqInputArea {
+    padding-top: 70px;
+}
+.inq .inqInputArea form {}
+.inq .inqInputArea form fieldset {}
+.inq .inqInputArea form fieldset .formWrap {}
 
+.inq .inqInputArea .formWrap .cate {}
+
+/*form label setting*/
+.inq .inqInputArea .formWrap .cate strong,
+.inq .inqInputArea .formWrap label{
+    display: inline-block;
+    width: 80px;
+    /*border: 2px solid dodgerblue;*/
+}
+
+.inq .inqInputArea .formWrap select {
+    width: 160px;
+    height: 32px;
+}
+.inq .inqInputArea .formWrap label
+.inq .inqInputArea .formWrap .cate #cateOption {}
+.inq .inqInputArea .formWrap .cate #cateOption option {}
+
+.inq .inqInputArea .formWrap :is(.name, .tel, .email, .inputText, .inqInfo, .submit) {
+    margin-top: 16px;
+}
+.inq .inqInputArea .formWrap .name {}
+.inq .inqInputArea .formWrap .name label {}
+.inq .inqInputArea .formWrap .name input {}
+
+.inq .inqInputArea .formWrap .tel {}
+.inq .inqInputArea .formWrap .tel label {}
+.inq .inqInputArea .formWrap .tel input {}
+
+.inq .inqInputArea .formWrap .email {}
+.inq .inqInputArea .formWrap .email label {}
+.inq .inqInputArea .formWrap .email input {}
+.inq .inqInputArea .formWrap .email span {}
+.inq .inqInputArea .formWrap .email #emailOption {}
+.inq .inqInputArea .formWrap .email #emailOption option {}
+
+.inq .inqInputArea .formWrap .inputText {
+    display: flex;
+    margin-top: 16px;
+}
+.inq .inqInputArea .formWrap .inputText label {}
+.inq .inqInputArea .formWrap .inputText .inqTextWrap {
+    height: 20vw;
+    overflow: auto;
+}
+.inq .inqInputArea .formWrap .inputText .inqTextWrap p {}
+.inq .inqInputArea .formWrap .inputText .inqTextWrap p textarea {
+    /*width: 75vw;*/
+    width: 71vw;
+    height: 20vw;
+    padding: 16px;
+    box-sizing: border-box;
+    resize: none;
+    color: var(--main-100);
+}
+
+body.light-mode .inq .inqInputArea .formWrap .inputText .inqTextWrap p textarea {
+    color: var(--main-800);
+}
+
+.inq .inqInputArea .formWrap .inqInfo {}
+.inq .inqInputArea .formWrap .inqInfo span {}
+.inq .inqInputArea .formWrap .submit {
+    text-align: right;
+}
+.inq .inqInputArea .formWrap .submit input {
+    width: 160px;
+    height: 44px;
+    border: none;
+    background: url("../images/button/img_button_submit.svg") no-repeat center ;
+
+    color: inherit;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 900;
+}
 
 @media (max-width: 1024px){
     .contactUs .locationArea .map iframe {
