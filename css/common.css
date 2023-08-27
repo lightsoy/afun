@@ -48,6 +48,16 @@ body.light-mode {
     background: var(--main-100);
     color: var(--main-800);
 }
+/*!*scrollBar*!*/
+/*body::-webkit-scrollbar {*/
+/*    width: 16px;*/
+/*    height: 100%;*/
+/*    background: transparent;*/
+/*}*/
+/*body::-webkit-scrollbar-thumb {*/
+/*    background: var(--sub2-700); !* 스크롤바 막대 색상 *!*/
+/*}*/
+
 .blind {
     position: absolute;
     width: 1px;
@@ -683,5 +693,4 @@ body.light-mode .footer .footerWrap .topArea .logo a {
     /*.header .headerWrap nav .gnb {*/
     /*    display: none; !important;*/
     /*}*/
-
 }
