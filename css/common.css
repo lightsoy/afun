@@ -725,11 +725,4 @@ body.light-mode .footer .footerWrap .topArea .logo a {
     }
 }
 
-@media (max-width: 480px) {
-    /*.header .headerWrap nav {*/
-    /*    display: none; !important;*/
-    /*}*/
-    /*.header .headerWrap nav .gnb {*/
-    /*    display: none; !important;*/
-    /*}*/
-}
+@media (max-width: 480px) {}
