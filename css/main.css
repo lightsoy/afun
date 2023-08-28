@@ -157,7 +157,7 @@ body.light-mode .visual .contentArea .scrollArea span {
     width: 138px;
     height: 44px;
     color: var(--main-100);
-    background: url("../images/button/img_button_visual.svg") no-repeat center;
+    background: url("../images/button/img_button_visual.svg") no-repeat center/ 100%;
 
     cursor: pointer;
 }
@@ -1046,16 +1046,16 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 }
 
 /*반응형*/
-@media (max-width: 1440px) {
+/*@media (max-width: 1440px) {*/
 
-}
+/*}*/
 @media (max-width: 1024px) {
     /*1024 visual*/
     .visual .videoFrame {
-        min-width: 1024px;
+        /*min-width: 1024px;*/
     }
     .visual .contentArea {
-        max-width: 784px;
+        /*max-width: 784px;*/
     }
 
     /*1024 ourWorks*/
@@ -1294,7 +1294,24 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
+
+    .visual .contentArea .visualTitArea strong {
+        font-size: 4vw;
+    }
+    .visual .contentArea .visualTitArea h2 {
+        font-size: 10vw;
+        line-height: 1.2;
+    }
+    .visual .contentArea .aboutBtn {
+        /*display: none;*/
+        /*width: 138px;*/
+        /*height: 44px;*/
+
+        width: 28vw;
+        height: 44px;
+        font-size: 14px;
+    }
     .business .contentArea .box {
         width: 90px;
     }
