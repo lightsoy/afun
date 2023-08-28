@@ -813,8 +813,8 @@ body.light-mode .ourTeam .accordionArea .accordion li .team h3.on {
     text-align: center;
 }
 .apply .bannerArea strong {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 40px;
     font-weight: 900;
     text-align: center;
 }
@@ -1134,12 +1134,20 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     }
 
     /*1024 business*/
+    .business .textArea {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .business .textArea .titWrap h2 {
         font-size: 32px;
         line-height: 40px;
     }
     .business .textArea .textWrap {
-        margin-left: 16px;
+        /*margin-left: 16px;*/
+        width: 75vw;
+        margin-left: 0;
+        margin-top: 16px;
     }
     .business .contentArea .box {
         width: 180px;
@@ -1197,13 +1205,19 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     /*1024 apply*/
     .apply .bannerArea {
         height: 216px;
+        padding-top: 50px;
     }
     .apply .bannerArea strong {
-        font-size: 24px;
-        line-height: 32px;
+
+        font-size: 18px;
+        line-height: 26px;
     }
     .apply .bannerArea .applyBtn {
+        width: 160px;
+        height: 40px;
         margin-top: 24px;
+
+        font-size: 14px;
     }
 
     /*.visual,*/
@@ -1291,15 +1305,15 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         height: 12px;
     }
 
-    .business .textArea {
-        flex-direction: column;
-        text-align: center;
-    }
+    /*.business .textArea {*/
+    /*    flex-direction: column;*/
+    /*    text-align: center;*/
+    /*}*/
 
-    .business .textArea .textWrap {
-        margin-left: 0;
-        margin-top: 16px;
-    }
+    /*.business .textArea .textWrap {*/
+    /*    margin-left: 0;*/
+    /*    margin-top: 16px;*/
+    /*}*/
 }
 
 @media (max-width: 580px) {
@@ -1324,5 +1338,27 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 
     .business .contentArea .box {
         width: 90px;
+    }
+
+    .ourTeam .accordionArea .accordion li .team h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .ourTeam .accordionArea .accordion li .team .accordionBtn {
+        width: 24px;
+        height: 24px;
+    }
+
+    .ourTeam .accordionArea .accordion li .team .accordionBtn span:nth-child(1) {
+        width: 16px;
+        height: 2px;
+    }
+    .ourTeam .accordionArea .accordion li .team .accordionBtn span:nth-child(2) {
+        width: 2px;
+        height: 16px;
+    }
+    .ourTeam .accordionArea .accordion li .teamList li {
+        font-size: 14px;
+        line-height: 22px;
     }
 }

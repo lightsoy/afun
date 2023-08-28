@@ -203,7 +203,7 @@ body.light-mode .breadCrumbs .location .loca-2:after {
 }
 .inq .inqInputArea .formWrap .inputText label {}
 .inq .inqInputArea .formWrap .inputText .inqTextWrap {
-    height: 20vw;
+    /*height: 20vw;*/
     overflow: auto;
 }
 .inq .inqInputArea .formWrap .inputText .inqTextWrap p {}
@@ -221,7 +221,9 @@ body.light-mode .inq .inqInputArea .formWrap .inputText .inqTextWrap p textarea 
     color: var(--main-800);
 }
 
-.inq .inqInputArea .formWrap .inqInfo {}
+.inq .inqInputArea .formWrap .inqInfo {
+    margin-left: 88px;
+}
 .inq .inqInputArea .formWrap .inqInfo span {}
 .inq .inqInputArea .formWrap .submit {
     text-align: right;
@@ -242,5 +244,22 @@ body.light-mode .inq .inqInputArea .formWrap .inputText .inqTextWrap p textarea 
     .contactUs .locationArea .map iframe {
         /*width: 300px;*/
         height: 28vh;
+    }
+}
+
+@media (max-width: 580px) {
+    .inq .inqInputArea .formWrap :is(.name, .tel, .email, .inputText, .inqInfo, .submit) {
+        margin-top: 32px;
+    }
+    .inq .inqInputArea .formWrap .inputText {
+        flex-direction: column;
+    }
+
+    .inq .inqInputArea .formWrap .inputText .inqTextWrap p textarea {
+        width: 75vw;
+        /*margin-top: 32px;*/
+    }
+    .inq .inqInputArea .formWrap .inqInfo {
+        margin-left: 0;
     }
 }

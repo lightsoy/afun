@@ -46,27 +46,29 @@ body.light-mode .businessInfo .textArea .titWrap h2 {
 
 
 .businessInfo .imgArea {
-    min-width: 1440px;
+    /*min-width: 1440px;*/
     margin-top: 56px;
 
     /*background: dodgerblue;*/
 }
 .businessInfo .imgArea .imgWrap {
-    width: 100%;
-    height: 640px;
+    /*width: 100%;*/
+    /*height: 640px;*/
+    width: 100vw;
+    height: 33.3vw;
     /*background: red;*/
 }
 
 .businessInfo.info-1 .imgArea .imgWrap {
-    background: url("../images/sub_business/img_sub_business_1.png") no-repeat left top / cover;
+    background: url("../images/sub_business/img_sub_business_1.png") no-repeat left top / 100% 100%;
 }
 
 .businessInfo.info-2 .imgArea .imgWrap {
-    background: url("../images/sub_business/img_sub_business_2.png") no-repeat left top / cover;
+    background: url("../images/sub_business/img_sub_business_2.png") no-repeat left top / 100% 100%;
 }
 
 .businessInfo.info-3 .imgArea .imgWrap {
-    background: url("../images/sub_business/img_sub_business_3.png") no-repeat left top / cover;
+    background: url("../images/sub_business/img_sub_business_3.png") no-repeat left top / 100% 100%;
 }
 
 
@@ -95,8 +97,10 @@ body.light-mode .businessInfo .textArea .titWrap h2 {
     gap: 24px;
 }
 .partnersInfo .imgArea .imgWrap .img {
-    width: 180px;
-    height: 120px;
+    /*width: 180px;*/
+    /*height: 120px;*/
+    width: 9.4vw;
+    height: 6.3vw;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 8px;
     border: 2px solid var(--main-600);
@@ -109,6 +113,7 @@ body.light-mode .partnersInfo .imgArea .imgWrap .img {
 
 .partnersInfo .imgArea .imgWrap .img img {
     width: 100%;
+    height: 100%;
     /*border: 1px solid red;*/
 }
 
@@ -322,4 +327,43 @@ body.light-mode .adBanner .bannerArea .bannerTit strong {
     opacity: 1;
     transition: 0.5s;
     transition-delay: 0.2s;
+}
+
+
+@media (max-width: 1024px) {
+    .businessInfo.info-2,
+    .businessInfo.info-3 {
+        padding-top: 124px;
+    }
+    .businessInfo .textArea {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+    .businessInfo .textArea .textWrap {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    /*.partnersInfo .imgArea .imgWrap .img {*/
+    /*    width: 9.4vw;*/
+    /*}*/
+
+    .adBanner .bannerArea .bannerTit strong {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .adBanner a .bannerArea .adBtn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 580px) {
+    .partnersInfo .imgArea {
+        margin-top: 48px;
+        gap: 8px;
+    }
+    .partnersInfo .imgArea .imgWrap {
+        gap: 8px;
+    }
+
 }
