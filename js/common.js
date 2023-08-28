@@ -31,9 +31,7 @@ $(window).on("scroll", function() {
 
 //followCursor
 
-if ($winW >= 1024) function () {
 mouseMoveEvent();
-}
 function mouseMoveEvent() {
     const $cursor = $(".followCursor");
     const mousePos = {

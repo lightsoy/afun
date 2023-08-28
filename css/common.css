@@ -618,6 +618,10 @@ body.light-mode .footer .footerWrap .topArea .logo a {
 }
 @media (max-width: 1024px) {
 
+    .followCursor{
+        display: none;
+    }
+
     section {
         /*1024 - 70*/
         /*min-width: 784px;*/
