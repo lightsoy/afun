@@ -16,7 +16,8 @@ body.light-mode .header .headerWrap .logo a {
 }
 
 .visual .videoFrame {
-    min-width: 1440px;
+    /*min-width: 1440px;*/
+    min-width: 100vw;
     position: absolute;
     left: 0;
     right: 0;
