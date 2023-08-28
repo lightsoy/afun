@@ -1069,23 +1069,26 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 
     .ourWorks .textGroup .textArea .textWrap,
     .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap {
-        top: 44%;
+        /*top: 44%;*/
+        top: 56%;
     }
 
     .ourWorks .textGroup .textArea .textWrap .cate,
     .ourWorks .textGroup .textArea .textWrap .date,
     .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .cate,
     .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .date {
-        display: none;
+        /*display: none;*/
     }
 
     .ourWorks .textGroup .textArea .textWrap h3,
     .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap h3 {
-        width: 320px;
+        /*width: 320px;*/
+        width: 306px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        /*-webkit-line-clamp: 2;*/
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
 
         font-size: 18px;
@@ -1093,6 +1096,10 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         font-weight: 700;
         /*margin: 8px 0;*/
         margin-top: 8px;
+    }
+    .ourWorks .textGroup .textArea .wBtn {
+        width: 32vw;
+        transform: translateY(100%);
     }
     .ourWorks .slideArea {
         /*width:567px;*/
@@ -1236,7 +1243,7 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
 
         font-size: 16px;
@@ -1246,7 +1253,8 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         margin-top: 8px;
     }
     .ourWorks .textGroup .textArea .wBtn {
-        width: 280px;
+        /*display: none;*/
+        /*width: 280px;*/
     }
     .ourWorks .slideArea {
         width:416px;
@@ -1312,6 +1320,8 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         height: 44px;
         font-size: 14px;
     }
+
+
     .business .contentArea .box {
         width: 90px;
     }
