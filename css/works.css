@@ -39,7 +39,7 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 
 .worksInfo .imgWrap .textArea .subTit p{
     color: var(--main-100);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 72px;
 }
