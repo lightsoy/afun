@@ -11,7 +11,8 @@
     display: flex;
     align-items: center;
 
-    height: 688px;
+    /*height: 688px;*/
+    height: 61vh;
     /*background: url("../images/sub_about/about_info_bg.png") no-repeat left bottom /100% 100%;*/
     background: url("../images/sub_about/about_info_bg.png") no-repeat center /cover;
 }
