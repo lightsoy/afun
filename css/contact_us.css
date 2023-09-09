@@ -92,6 +92,7 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     padding-bottom: 32px;
 }
 .inq .agreeArea {border-top: 2px solid var(--main-100);}
+body.light-mode .inq .agreeArea {border-top: 2px solid var(--main-800);}
 .inq .agreeArea .titWrap {margin-top: 70px;}
 .inq .agreeArea .titWrap h2 {}
 
@@ -107,7 +108,9 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     display: inline-block;
     background: var(--sub3-800);
     margin: 0 auto;
+    color: var(--main-100);
 }
+
 .inq .agreeArea .allCheck label input {
     width: auto;
     height: auto;
@@ -133,6 +136,9 @@ body.light-mode .breadCrumbs .location .loca-2:after {
     height: 32vh;
     overflow: auto;
     border: 1px solid var(--main-100);
+}
+body.light-mode .inq .agreeArea .agree .desc {
+    border: 1px solid var(--main-800);
 }
 .inq .agreeArea .agree .desc p {
     font-size: 12px;
@@ -239,6 +245,7 @@ body.light-mode .inq .inqInputArea .formWrap .inputText .inqTextWrap p textarea 
     line-height: 16px;
     font-weight: 900;
 }
+body.light-mode .inq .inqInputArea .formWrap .submit input {color: var(--main-100);}
 
 @media (max-width: 1024px){
     .contactUs .locationArea .map iframe {

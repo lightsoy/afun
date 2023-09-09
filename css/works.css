@@ -41,8 +41,8 @@ body.light-mode .worksInfo .imgWrap .textArea  {
 .worksInfo .imgWrap .textArea .subTit p{
     color: var(--main-100);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 72px;
+    font-size: 18px;
+    line-height: 40px;
 }
 
 /*works*/
@@ -166,9 +166,15 @@ body.light-mode .works .worksArea .worksWrap .worksItem a .textWrap span {
     /*background: dodgerblue;*/
     margin-top: 20px;
     background: url("../images/dark_mode/ico_right.png") no-repeat center/ 100% 100%;
+
+    cursor: pointer;
 }
+body.light-mode .works .pageArea :is(.prevArrow, .nextArrow) {
+    background: url("../images/light_mode/ico_right.png") no-repeat center/ 100% 100%;
+}
+
 .works .pageArea .prevArrow {
-    display: none;
+    /*display: none;*/
     transform: rotate(-180deg);
 }
 .works .pageArea .prevArrow.on {
@@ -226,7 +232,7 @@ body.light-mode .works .worksArea .worksWrap .worksItem a .textWrap span {
 }
 
 .siteMap .siteLinkWrap .site:hover {
-    background-size: 120%;
+    background-size: 110%;
 }
 
 .siteMap .siteLinkWrap .site .snsIcon {

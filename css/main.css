@@ -354,6 +354,9 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
     transform: translateX(-100%) translateY(-50%);
     background: url("../images/dark_mode/ico_left_large.png") no-repeat center / 100%;
 }
+body.light-mode .wSlideWrap .prevArrow {
+    background: url("../images/light_mode/ico_left_large.png") no-repeat center / 100%;
+}
 .wSlideWrap .nextArrow {
     right: 0;
     background: url("../images/dark_mode/ico_right_large.png") no-repeat center / 100%;
@@ -538,16 +541,19 @@ body.light-mode .business .textArea .titWrap h2 {
     right: 0;
     top: 0;
     bottom: 0;
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+
     background: rgba(0, 0, 0, 0.33);
     font-size: 24px;
     font-weight: bold;
     color: var(--main-100);
+    border-radius: 6%;
+
     z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: 0.5s;
 }
 .business .contentArea .box .boxTit strong {
     transform: translateY(20px);

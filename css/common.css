@@ -230,8 +230,6 @@ body.light-mode .header .headerWrap .logo a {
     box-sizing: border-box;
     padding-top: 28px;
 
-    /*text-decoration: none;*/
-    /*color: inherit;*/
 }
 
 .header .headerWrap nav .gnb li > a:hover {
@@ -269,6 +267,9 @@ body.light-mode .header .headerWrap .logo a {
     width: 100%;
 
     background: rgba(0, 0, 0, 0.5);
+
+
+    z-index: 99999;
 }
 body.light-mode .header .headerWrap nav .gnb > li:nth-child(5) .depth2 {
     background: rgba(255, 255, 255, 0.5);
@@ -343,7 +344,7 @@ body.light-mode .header .headerWrap nav .gnb > li:nth-child(5) .depth2 {
 }
 .breadCrumbs.on {
      background: var(--main-800);
-     z-index: 1000;
+     z-index: 100;
 }
 body.light-mode .breadCrumbs.on {
     background: var(--main-100);
@@ -423,7 +424,7 @@ body.light-mode section .subTit p {
     right: 16px;
     bottom: 16px;
     /*border: 2px solid red;*/
-    z-index: 99999;
+    z-index: 10000;
 }
 .quickBtnArea .chatDiv {cursor: pointer;}
 
@@ -433,7 +434,7 @@ body.light-mode section .subTit p {
     bottom: 92px;
     background: url("../images/button/img_chat.png") no-repeat center/cover;
 
-    z-index: 999;
+    z-index: 1000;
 }
 
 .quickBtnArea .chatDiv .quickMsg,
