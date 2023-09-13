@@ -29,8 +29,16 @@ $(window).on("scroll", function() {
 
 });
 
-//followCursor
+// /*mobile menu*/
+const $popupBtn = $(".header .headerWrap .headerIcons .popupBtn");
 
+$popupBtn.on("click", function () {
+    $popupBtn.toggleClass("on");
+    $(".menuPop").fadeToggle();
+});
+
+
+//followCursor
 mouseMoveEvent();
 function mouseMoveEvent() {
     const $cursor = $(".followCursor");
