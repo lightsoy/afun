@@ -314,7 +314,7 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
     font-weight: 700;
 
     border-radius: 4px;
-    background: url("../images/button/img_button_our_works.svg") no-repeat left top / cover;
+    background: url("../images/button/img_button_our_works.svg") no-repeat center / cover;
     background-blend-mode: overlay, normal, normal;
 
 }
@@ -1071,11 +1071,11 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
 }
 @media (max-width: 1440px) {
     .ourWorks .slideArea {
-        left: 27vw;
-        width: 60.5vw;
+        left: 32vw;
+        width: 55.5vw;
     }
     .ourWorks .wDotsWrap {
-        margin-left: 27vw;
+        margin-left: 32vw;
     }
 
 }
@@ -1113,7 +1113,8 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     .ourWorks .textGroup .textArea .textWrap h3,
     .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap h3 {
         /*width: 320px;*/
-        width: 306px;
+        /*width: 306px;*/
+        width: 28vw ;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -1128,7 +1129,8 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
         margin-top: 8px;
     }
     .ourWorks .textGroup .textArea .wBtn {
-        width: 32vw;
+        /*width: 32vw;*/
+        width: 24vw;
         transform: translateY(100%);
     }
     .ourWorks .slideArea {
@@ -1284,16 +1286,22 @@ body.light-mode .partners .rollingArea .rolling .logoWrap .rollingImgWrap:hover 
     /*    top: 44%;*/
     /*}*/
 
+    .ourWorks .textGroup .textArea .textWrap .cate, .ourWorks .textGroup .textArea .textWrap .date,
+    .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .cate, .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .date {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
     .ourWorks .textGroup .textArea .textWrap h3,
     .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap h3 {
-        width: 280px;
+        width: 200px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
 
-        font-size: 16px;
+        font-size: 14px;
         line-height: 22px;
         font-weight: 700;
         /*margin: 8px 0;*/
