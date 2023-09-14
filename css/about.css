@@ -144,7 +144,7 @@ body.light-mode .ciGuide .contentArea .textArea .textWrap p {
     /*height: 3vw;*/
     /*width: 350px;*/
     /*height: 49px;*/
-    background: url("../images/button/img_button_sub_about_guide.svg") no-repeat center / cover;
+    background: url("../images/button/img_button_sub_about_guide.svg") no-repeat center / contain;
     cursor: pointer;
 
     color: var(--main-100);
@@ -333,7 +333,7 @@ body.light-mode .concept .imgArea .conceptImg {
     .ciGuide .contentArea .textArea {
         margin: 0 auto;
         text-align: center;
-        height: 28vh;
+        height: 32vh;
     }
     .ciGuide .contentArea .textArea .textWrap p {
         font-size: 12px;
@@ -354,6 +354,7 @@ body.light-mode .concept .imgArea .conceptImg {
     .ciGuide .contentArea .imgArea {
         /*width: 43vw;*/
         width: 100%;
+        min-width: 0;
         margin: 0 auto;
     }
 
@@ -392,5 +393,11 @@ body.light-mode .concept .imgArea .conceptImg {
     .concept .imgArea .conceptImg:nth-child(2) {
         margin-left: 0;
         margin-top: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ciGuide .contentArea .textArea {
+        height: 44vh;
     }
 }

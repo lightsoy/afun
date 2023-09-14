@@ -59,13 +59,13 @@ body.light-mode .header .headerWrap .logo a {background: url("../images/dark_mod
 .visual .contentArea .visualTitArea strong {
     font-size: 24px;
     line-height: 32px;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--main-200);
 }
 .visual .contentArea .visualTitArea h2 {
     font-size: 58px;
     line-height: 72px;
-    font-weight: 900;
+    font-weight: 700;
 }
 body.light-mode .visual .contentArea .visualTitArea h2 {
     color: var(--main-100);
@@ -171,7 +171,7 @@ body.light-mode .visual .contentArea .scrollArea span {
 }
 
 .ourWorks .textGroup .textArea .titWrap h2 {
-    margin-top: 16px;
+    margin-top: 24px;
     font-size: 48px;
     line-height: 40px;
 }
@@ -210,7 +210,7 @@ body.light-mode .ourWorks .textGroup .textArea .wSlideTextWrap :is(.cate, .date)
 }
 
 .ourWorks .textGroup .textArea .textWrap .cate,
-.ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .cate {font-weight: 900;}
+.ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .cate {font-weight: 700;}
 .ourWorks .textGroup .textArea .wSlideTextWrap .wTextWrap .date {
     display: inline-block;
     margin-top: 8px;
@@ -411,7 +411,7 @@ body.light-mode .wSlideWrap .wSlideImgWrap .wDimmed {
 .business .textArea .titWrap h2 {
     font-size: 48px;
     line-height: 56px;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--main-100);
 }
 body.light-mode .business .textArea .titWrap h2 {
@@ -429,7 +429,7 @@ body.light-mode .business .textArea .titWrap h2 {
     margin-top: 56px;
     text-align: center;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 24px;
     color: var(--main-100);
 }
@@ -439,7 +439,8 @@ body.light-mode .business .textArea .titWrap h2 {
     position: relative;
 }
 .business .contentArea .box:nth-child(2){
-    margin: 96px 48px 0;
+    /*margin: 96px 48px 0;*/
+    margin: 5vw 2.5vw 0;
 }
 
 .business .contentArea .box a {
@@ -516,7 +517,7 @@ body.light-mode .business .textArea .titWrap h2 {
 .ourTeam .contentArea {
     display: flex;
     justify-content: center;
-    height: 24vw;
+    height: 460px;
 }
 .ourTeam .textArea {width: 36vw;}
 .ourTeam .textArea .titWrap .subTit {margin-top: 16px;}
@@ -574,7 +575,7 @@ body.light-mode .ourTeam .accordionArea .accordion li > .team {color: var(--sub3
 .ourTeam .accordionArea .accordion li .team h3 {
     font-size: 28px;
     line-height: 36px;
-    font-weight: 900;
+    font-weight: 700;
     transition: 0.5s;
 }
 .ourTeam .accordionArea .accordion li .team h3.on {
@@ -629,7 +630,7 @@ body.light-mode .ourTeam .accordionArea .accordion li .team .accordionBtn span {
 .apply .bannerArea strong {
     font-size: 32px;
     line-height: 40px;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -642,7 +643,7 @@ body.light-mode .apply .bannerArea strong {color: var(--main-100);}
     color: var(--main-100);
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 700;
     border-radius: 4px;
     background: url("../images/button/img_button_apply.svg") no-repeat left top / cover;
     background-blend-mode: overlay, normal, normal;

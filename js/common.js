@@ -34,6 +34,7 @@ const $popupBtn = $(".header .headerWrap .headerIcons .popupBtn");
 
 $popupBtn.on("click", function () {
     $popupBtn.toggleClass("on");
+    $body.toggleClass("popupOn");
     $(".menuPop").fadeToggle();
 });
 
